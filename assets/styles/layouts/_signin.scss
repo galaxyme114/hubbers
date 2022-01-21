@@ -1,0 +1,204 @@
+.signin-wrap {
+	.signin-container {
+		@extend .container;
+		max-width: 960px;
+	}
+	.signin-section__error {
+		font-size: 0.875rem;
+		line-height: 1;
+		color: #484848;
+		background-color: $background-red;
+		border-radius: 0.1rem;
+		padding: 0.675rem 1rem;
+		// margin-bottom: 1rem;
+		margin-top: -1rem;
+	}
+	.signin-section {
+		@include clearfix;
+		padding: 1rem 2rem 3rem;
+		background-color: #fff;
+		border-radius: 0.1rem;
+		margin-bottom: 4rem;
+
+		@include respond-to($desktop) {
+			display: flex;
+			align-items: center;
+			padding-top: 3rem;
+		}
+
+		> div {
+			@include respond-to($desktop) {
+				padding: 0 2rem;
+				@include span-columns(6 of 12);
+			}
+		}
+
+		.signin-section__error {
+			font-size: 0.875rem;
+			line-height: 1;
+			color: #484848;
+			background-color: $background-red;
+			border-radius: 0.1rem;
+			padding: 0.675rem 1rem;
+			margin-bottom: 1rem;
+			margin-top: -1rem;
+		}
+
+		.signin-section__fields {
+			text-align: center;
+
+			.password-input {
+				margin-bottom: 2rem;
+			}
+		}
+
+		.signin-section__fields__help {
+			margin-top: 1rem;
+
+			a {
+				font-size: 0.875rem;
+				padding: 0.5rem 1rem;
+			}
+		}
+
+		.signin-section__description {
+			margin-top: 4rem;
+
+			@include respond-to($desktop) {
+				margin-top: 0;
+			}
+
+			.signin-section__description__item {
+				@include clearfix;
+				margin-bottom: 1.5rem;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				.signin-section__description__item__image {
+					position: absolute;
+					width: 5rem;
+					text-align: center;
+
+					img {
+						max-width: 3.125rem;
+					}
+				}
+
+				.signin-section__description__item__content {
+					font-size: 0.875rem;
+					padding-left: 5.5rem;
+					min-height: 3.125rem;
+				}
+
+				.signin-section__description__item__title {
+					font-size: 1rem;
+					font-weight: bold;
+					text-transform: uppercase;
+					letter-spacing: 0.05rem;
+					margin-bottom: 0.25rem;
+				}
+
+				.signin-section__description__item__caption {
+					margin: 0;
+					color: $text-grey;
+				}
+			}
+		}
+
+		.signin-section__progress {
+			text-align: center;
+
+			.signin-section__progress__label {
+				font-size: 1.25rem;
+				margin-bottom: 1.5rem;
+				display: block;
+				color: $text-grey;
+			}
+
+			.sk-spinner > div {
+				background-color: $green;
+			}
+		}
+
+		.signin-section__user {
+			text-align: center;
+
+			.signin-section__user__caption {
+				font-size: 0.875rem;
+				color: $text-grey;
+				margin-bottom: 1.5rem;
+			}
+
+			.user-thumbnail {
+				width: 6rem;
+				height: 6rem;
+				margin: 0 auto 0.5rem;
+
+				.initials {
+					font-size: 3.65rem;
+					line-height: 1.3;
+				}
+			}
+
+			.signin-section__user__name {
+				font-size: 1.75rem;
+			}
+
+			.signin-section__user__cta {
+				margin-top: 1.5rem;
+
+				a {
+					padding-left: 1rem;
+					padding-right: 1rem;
+
+					&:hover {
+						cursor: pointer;
+					}
+
+					&.danger {
+						color: $red;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Social Linkedin
+
+.signin-section__fields__social {
+	@include clearfix;
+	padding: 1.25rem 1rem;
+	border-bottom: 1px solid $border-grey;
+	text-align: center;
+	margin-bottom: 2rem;
+
+	.signin-section__fields__social-button {
+		display: inline-block;
+		color: #fff;
+		padding: 0.5rem 0.25rem;
+		border-radius: 0.15rem;
+		transition: all 0.3s;
+
+		&:hover {
+			cursor: pointer;
+			opacity: 0.85;
+		}
+
+		.icon {
+			font-size: 2rem;
+			line-height: 1rem;
+			float: left;
+		}
+
+		.label {
+			padding: 0 0.5rem;
+		}
+	}
+}
+
+.signin-section__fields__social-button--linkedin {
+	background-color: #257AB6;
+}

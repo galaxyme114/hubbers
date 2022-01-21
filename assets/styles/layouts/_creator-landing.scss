@@ -1,0 +1,44 @@
+.page-creator-landing {
+
+	.creative-hub {
+		background-color: $white;
+		color: $black;
+
+		.creative-hub__item {
+			@include respond-to($desktop) {
+				@include span-columns(4 of 12);
+			}
+
+			.creative-hub__item__image {
+				background-color: $background-grey;
+			}
+
+			.creative-hub__item__caption {
+				color: $black;
+			}
+		}
+	}
+
+	#hubbers-help {
+		background-color: $black;
+		color: $white;
+	}
+
+	#expert-marketplace {
+		background-color: #000000;
+		color: $white;
+
+		.points-list__item {
+			@include respond-to($desktop) {
+				@include omega(5n);
+				@include span-columns(2.4 of 12);
+
+				&:nth-child(5n) { clear: none }
+			}
+		}
+	}
+
+	.testimonials__list {
+		margin-top: 2rem;
+	}
+}

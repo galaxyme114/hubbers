@@ -1,0 +1,901 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "title": "CONCEPT",
+      "icon": "concept",
+      "preQualification": true,
+      "questions": [
+        {
+          "id": 1,
+          "category": "Product name",
+          "title": "Do you have a product name ?",
+          "tags": [
+            "Branding expert",
+            "Creative writer"
+          ],
+          "weight": 0.01,
+          "tutorial": [
+            "How to brand your product (name, visuals, communication goals with your brand)"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 2,
+          "category": "Product category",
+          "title": "Can you define your product category ?",
+          "tags": [
+            "Branding expert",
+            "Creative writer"
+          ],
+          "weight": 0.01,
+          "tutorial": [
+            "How to define the product category and its importance"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 3,
+          "category": "Tagline",
+          "title": "Do you have a product tagline ?",
+          "tags": [
+            "Branding expert",
+            "Creative writer"
+          ],
+          "weight": 0.03,
+          "tutorial": [
+            "What makes a good tagline and strong branding"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 4,
+          "category": "Product visual rendering",
+          "title": "Do you have some kind of visual rendering of your product ?",
+          "tags": [
+            "Graphic designer",
+            "Product designer"
+          ],
+          "weight": 0.1,
+          "tutorial": [
+            "How to create your logo",
+            "How to use Illustrator (basic)",
+            "How to use Photoshop (basic)",
+            "What is included in your visual identity"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "VALUE PROPOSITION",
+      "icon": "value-proposition",
+      "preQualification": true,
+      "questions": [
+        {
+          "id": 1,
+          "category": "The Problem",
+          "title": "Have you clarified what need or issues your product is solving ?",
+          "tags": [
+            "Super-expert / Project manager",
+            "Business copywriting",
+            "Financial expert",
+            "Marketing specialist"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "Understand the relationship  between problem and solution in regards of your product"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 2,
+          "category": "Solution provided",
+          "title": "Can you list all your product functions and user features ?",
+          "tags": [
+            "Branding specialist",
+            "Business copywriting",
+            "Financial expert",
+            "Marketing specialist"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "Create a product that solves AN existing or expected problem"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 3,
+          "category": "Product description",
+          "title": "Can you describe clearly your product essential features in one sentence ?",
+          "tags": [
+            "Branding specialist"
+          ],
+          "weight": 0.1,
+          "tutorial": [
+            "How to write a compelling product description"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "COMPETITION",
+      "icon": "competition",
+      "preQualification": true,
+      "questions": [
+        {
+          "id": 1,
+          "category": "Main competitors",
+          "title": "Do you know if there is similar product and quasi-competitors on the market ?",
+          "tags": [
+            "Researcher / Virtual Assistant Marketing specialist"
+          ],
+          "weight": 0.1,
+          "tutorial": [
+            "How to do a market research",
+            "How to do a market analysis"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 2,
+          "category": "Competition intensity",
+          "title": "Do you know how much opportunity for growth is possible for your product within the current competition environment ?",
+          "tags": [
+            "Amazon specialist",
+            "Researcher /virtual assistant",
+            "Marketing specialist"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "How to do competitor analysis",
+            "What is a SWOT analysis and how to do it",
+            "O What is a competitor / quasi-competitor ?"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 3,
+          "category": "Crowdfunding opportunity",
+          "title": "Do you know how likely your product can be crowd funded ?",
+          "tags": [
+            "Crowdfunding specialist",
+            "Amazon specialist"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "What is crowdfunding",
+            "How to prepare your project for crowdfunding",
+            "How to succeed with your crowdfunding project"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 4,
+          "category": "Competitive advantages",
+          "title": "Did you list your product competitive advantages compare to existing competition?",
+          "tags": [
+            "Researcher /virtual assistant",
+            "Marketing specialist"
+          ],
+          "weight": 0.1,
+          "tutorial": [
+            "Which competitive advantages are important -understanding market behavior"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "CONSUMER SPECIFICATIONS",
+      "icon": "consumer-specifications",
+      "preQualification": false,
+      "questions": [
+        {
+          "id": 1,
+          "category": "General specs",
+          "title": "Did you wrote product general specifications ?",
+          "tags": [
+            "Product manager / Super-expert"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "How to write product specification"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 2,
+          "category": "Sub-assemblies",
+          "title": "Do you have a functional analyse of your product by sub-assemblies ?",
+          "tags": [
+            "Industrial designer",
+            "Mechanical engineer",
+            "Electrical Engineer"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "Understand what are sub-assemblies"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 3,
+          "category": "Target markets",
+          "title": "Can you list and describe your product  target markets ?",
+          "tags": [
+            "Super-expert / Project manager",
+            "Researcher /virtual assistant",
+            "Marketing specialist"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "How to identify your target markets"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "TECHNICAL SPECIFICATIONS",
+      "icon": "technical-specifications",
+      "preQualification": false,
+      "questions": [
+        {
+          "id": 1,
+          "category": "BOM",
+          "title": "Do you have a BOM for you product ?",
+          "tags": [
+            "Industrial designer",
+            "Mechanical engineer",
+            "Electrical Engineer"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "Understand what is a BOM ?",
+            "Understadning of different types of materials, their specifics and related regulations"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 2,
+          "category": "Detail drawings",
+          "title": "Do you have product components detailed drawings ?",
+          "tags": [
+            "CAD specialist",
+            "Industrial designer",
+            "Mechanical engineer",
+            "Electrical Engineer"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "Understand CAD industrial drawing for manufacturing."
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 3,
+          "category": "Quality specifications",
+          "title": "Do you have QC plan ?",
+          "tags": [
+            "Industrial designer",
+            "Quality engineer",
+            "Sourcing Specialist"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "What is QC management ?"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "ENVIRONMENT",
+      "icon": "environment",
+      "preQualification": false,
+      "questions": [
+        {
+          "id": 1,
+          "category": "Patent & copyright",
+          "title": "Did you assess your need for IP protection ?",
+          "tags": [
+            "Copyright & IP expert"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "The difference between patent and copyright                                                                      o what kind of IP protection is actually needed according product type and target markets ?  o what is actual cost and return on investment of IP protection ?  o when is it better not to protect IP to focus on product to market launch speed ?"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 2,
+          "category": "IP protection",
+          "title": "Do you have IP strategy and action plan ?",
+          "tags": [
+            "Copyright & IP expert"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "Everything you need to know about IP protection",
+            "O How to protect you design",
+            "O How to protect your logo",
+            "O How to protect your brand"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 3,
+          "category": "Regulation overview",
+          "title": "Do you know which regulations apply to your product ?",
+          "tags": [
+            "Product specialist",
+            "Mechanical/Electrical engineer"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "Electrionic products regulation overview",
+            "Mechanical product regulation overview",
+            "Toys, baby product...etc(Per product category) regulation overview"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 4,
+          "category": "Industrial organization",
+          "title": "Do you know which manufacturing and logistic organization will best suit your product growth ?",
+          "tags": [
+            "Sourcing specialist",
+            "Logistic specialist",
+            "Manufacturing and industrial management engineer"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "Understanding the logistic and manufacturing organization, related costs and how to optimize it: minimum quantity, production methods and quality standards definition, quality control organization, mold and tools, sample&pre industrial batch production, industrialisation optimized zation"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 5,
+          "category": "Sales organization",
+          "title": "Do you know which sales and distribution organization will best suit your product growth ?",
+          "tags": [
+            "Commercial legal expert"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "Understanding sales and distribution solutions for your product.",
+            "Understanding NDA & NCA",
+            "Types of contracts while working on your project"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "BUSINESS DEVELOPMENT",
+      "icon": "business-development",
+      "preQualification": false,
+      "questions": [
+        {
+          "id": 1,
+          "category": "Pricing Strategy",
+          "title": "Do you have a pricing strategy and price target for your product ?",
+          "tags": [
+            "SUper-expert",
+            "Financial expert"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "Basics of pricing strategy and how to price your products"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 2,
+          "category": "Target customer",
+          "title": "Can you describe all you buyers personas ?",
+          "tags": [
+            "Researcher /virtual assistant",
+            "Business development specialist",
+            "Marketing specialist"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "How to define your customer profiles/buyer personas ?",
+            "Understand your customer profiles and targets: users vs customers vs buyers",
+            "What are the buyer personas and why are they important",
+            "Understadning of different types of sales channels",
+            "How to work with distributors"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 3,
+          "category": "Customer validation",
+          "title": "Do you have a business development strategy ?",
+          "tags": [
+            "Researcher /virtual assistant",
+            "Business development specialist"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "How to validate your customers (understandig customer behavior)",
+            "How to prepare a business/sales development plan ?",
+            "Understand what is a saleas funnel and how to describe it for your product/business ?"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 4,
+          "category": "Sales targets",
+          "title": "Do you have sales targets in line with development and industrialisation costs ?",
+          "tags": [
+            "Business development specialist"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "How to define and forecast sales volumes and targets ?"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 5,
+          "category": "Sales development",
+          "title": "Did you sold product already ?",
+          "tags": [
+            "Sales specialist(online/offline)",
+            "Distributor specialist",
+            "Retail specialist",
+            "Virtual assitant"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "How to develop sales ?",
+            "Sales funnel development: suspect vs prospect vs hot prospects ?"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 6,
+          "category": "Sales administration",
+          "title": "Do you know how to manage invoicing and other sales admin tasks ?",
+          "tags": [
+            "Sourcing specialist",
+            "Logistic specialist"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "Understanding sales admin in line with orders, production and delivery processes",
+            "Understand customer satisfaction management"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "MARKETING",
+      "icon": "marketing",
+      "preQualification": false,
+      "questions": [
+        {
+          "id": 1,
+          "category": "Visual identity & Logo",
+          "title": "Do you have a logo ?",
+          "tags": [
+            "Branding specialist",
+            "Graphic designer"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "How to create a successful logo ?"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 2,
+          "category": "Marketing strategy",
+          "title": "Do you have a marketing strategy ?",
+          "tags": [
+            "Branding specialist"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "How to write your marketing strategy"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 3,
+          "category": "Market potential",
+          "title": "Do you know your products target markets potential ?",
+          "tags": [
+            "Researcher /virtual assistant",
+            "Marketing specialist"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "Understand your market potential"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "OFFLINE COMMUNICATION",
+      "icon": "offline-communication",
+      "preQualification": false,
+      "questions": [
+        {
+          "id": 1,
+          "category": "Communication action plan",
+          "title": "Do you have an online/offline communication strategy and action plan ?",
+          "tags": [
+            "Marketing specialist",
+            "Marketing agency",
+            "Social media manager",
+            "Social media agency",
+            "Researcher",
+            "Copy writer",
+            "Business copy writer"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "How to write your communication action plan",
+            "How to identify your communication goals"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 2,
+          "category": "Communication content",
+          "title": "Do you have a brochure for your communication ?",
+          "tags": [
+            "Marketing specialist",
+            "Marketing/ communication agency"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            ""
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 3,
+          "category": "Pitch deck",
+          "title": "Doyou have a pitch deck ?",
+          "tags": [
+            "Super-expert",
+            "Marketing specialist"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "What is a pitch deck and why is it important to have one ?"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 4,
+          "category": "offline product recognition",
+          "title": "Did you perform offline communication of any kind about your product ?",
+          "tags": [
+            "Marketing specialist",
+            "Marketing agency",
+            "Communication/Advertisement specialist"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "What offline communication available and efficient for hardware and consumer products ?"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "ONLINE COMMUNICATION",
+      "icon": "online-communication",
+      "preQualification": false,
+      "questions": [
+        {
+          "id": 1,
+          "category": "Online Product recogniti",
+          "title": "Did you perform online communication of any kind about your product ?",
+          "tags": [
+            "Marketing specialist",
+            "Marketing agency",
+            "Social media manager",
+            "Social media agency",
+            "Researcher",
+            "Copy writer",
+            "Business copy writer"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "How to choose the best communication channels for your brand",
+            "What are the offline and online communication methods",
+            "Why KOLs are important for your business",
+            "How social media exposure can help your brand",
+            "How to write a communication plan",
+            "How to budget your communication activities"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 2,
+          "category": "online communication tools",
+          "title": "Do you have a website or online communication tool for your product ?",
+          "tags": [
+            "I.T. specialists",
+            "App developer",
+            "UX/UI developer",
+            "Web developer",
+            "Search Engine Specialist",
+            "Content specialist",
+            "Video specialist"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "This area is very knowledge-specific and only recommend these:",
+            "Understanding Wordpress without coding",
+            "What is SEO and why is it important",
+            "How does Google Analytics work"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 3,
+          "category": "Crowdfunding",
+          "title": "Does your product fit a crowdfunding campaign ?",
+          "tags": [
+            ""
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            ""
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "PLANNING",
+      "icon": "planning",
+      "preQualification": false,
+      "questions": [
+        {
+          "id": 1,
+          "category": "Project team",
+          "title": "Do you have a team to work on all tasks you are not able to do ?",
+          "tags": [
+            "Project manager / Super-expert"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "How effective project management works (steps, participants, expected outcomes and goal setting)"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 2,
+          "category": "Project job tasks",
+          "title": "Do you have a precise list of tasks to perform to develop, manufacture and sell a first batch of your product ?",
+          "tags": [
+            "Project manager / Super-expert"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "How effective project management works (steps, participants, expected outcomes and goal setting)"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 3,
+          "category": "Development planning",
+          "title": "Do you have a product development and manufacturing action plan ?",
+          "tags": [
+            "Project manager / Super-expert"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "What is project management ?",
+            "What is a GANTT project schedule and why it works?"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        },
+        {
+          "id": 4,
+          "category": "Proof-of-concept",
+          "title": "Do you have proof of concept or an MVP ?",
+          "tags": [
+            "Project manager / Super-expert"
+          ],
+          "weight": 0.05,
+          "tutorial": [
+            "O What is the proof-of-concept ? what kind of format and content ?",
+            "O What is an early prorotype/MVP ? what is it for, when is it needed ?"
+          ],
+          "type": "YES_NO",
+          "correctValue": [
+            "YES"
+          ],
+          "value": null
+        }
+      ]
+    }
+  ]
+}

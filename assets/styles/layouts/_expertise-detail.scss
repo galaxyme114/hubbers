@@ -1,0 +1,71 @@
+.desk-section--expertise-detail {
+
+	.model-detail__tile__wrap {
+		.model-detail__tile--left {
+			@include span-columns(8 of 12);
+
+			@include respond-to($mobile) {
+				@include span-columns(12 of 12);
+			}
+		}
+
+		.model-detail__tile--right {
+			@include span-columns(4 of 12);
+
+			@include respond-to($mobile) {
+				@include span-columns(12 of 12);
+			}
+		}
+	}
+
+	// Rating
+	.expertise-detail__rating {
+		@include clearfix();
+
+		.star-rating {
+			float: left;
+			margin-right: 0.5rem;
+		}
+
+		.rating {
+			color: $green;
+		}
+
+		.reviews {
+			color: $text-grey;
+		}
+	}
+
+	// Packages
+	.expertise-detail__packages {
+
+	}
+
+	// About
+	.expertise-detail__about {
+		@include clearfix();
+
+		> div {
+			@include span-columns(4 of 12);
+
+			@include respond-to($mobile) {
+				@include span-columns(12 of 12);
+			}
+		}
+
+		.expertise-detail__about__content {
+			@include span-columns(8 of 12);
+
+			@include respond-to($mobile) {
+				@include span-columns(12 of 12);
+			}
+		}
+
+		.expert-profile {
+			@include respond-to($mobile) {
+				margin-top: 4rem;
+			}
+		}
+	}
+
+}

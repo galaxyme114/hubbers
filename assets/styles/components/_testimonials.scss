@@ -1,0 +1,108 @@
+.testimonials {
+	background-color: $text-black;
+	padding: 5rem 1rem 4rem;
+
+	.testimonials__head {
+		color: $white;
+
+		.testimonials__title {
+			font-size: 2.5rem;
+			font-weight: bold;
+			letter-spacing: 0.05rem;
+			text-transform: uppercase;
+			text-align: center;
+			margin-bottom: 0.125rem;
+		}
+
+		.testimonials__subtitle {
+			font-size: 1rem;
+			font-weight: normal;
+			text-transform: uppercase;
+			text-align: center;
+			margin-bottom: 2rem;
+		}
+	}
+}
+
+.testimonials__list {
+	.slick-track {
+		@include respond-to($desktop) {
+			display: flex;
+		}
+
+		.slick-slide {
+			@include respond-to($desktop) {
+				display: flex;
+				height: auto;
+				align-items: center;
+			}
+		}
+	}
+
+	.slick-dots li.slick-active button::before,
+	.slick-dots li button::before {
+		color: $green;
+	}
+}
+
+.testimonial {
+	@include clearfix;
+	position: relative;
+	background-color: $white;
+
+	> div {
+		width: 100%;
+		float: left;
+
+		@include respond-to($desktop) {
+			width: 50%;
+		}
+	}
+
+	.testimonial__content {
+		padding: 4rem 4rem 4rem 8rem;
+
+		&:before {
+			@extend .icomoon;
+			content: "\e915";
+
+			font-size: 3rem;
+			color: $black;
+
+			position: absolute;
+			margin-left: -4.5rem;
+			margin-top: -0.25rem;
+		}
+
+		.testimonial__content__title {
+			font-size: 1.25rem;
+			font-weight: bold;
+			color: $black;
+			margin-bottom: 1rem;
+		}
+
+		.testimonial__content__content {
+			font-size: 1.125rem;
+			line-height: 1.5rem;
+			margin-bottom: 1.125rem;
+		}
+
+		.testimonial__content__caption {
+			font-size: 0.875rem;
+			color: $text-grey;
+		}
+	}
+
+	.testimonial__image {
+		background: $background-grey center;
+		background-size: cover;
+		padding-top: 56.25%;
+
+		@include respond-to($desktop) {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+		}
+	}
+}

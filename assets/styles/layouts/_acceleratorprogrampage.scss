@@ -1,0 +1,440 @@
+.accelerator-program {
+
+	.accelerator_banner_section {
+		display: flex;
+		width: 100%;
+		margin-bottom: 1rem;
+		@include respond-to($mobile) {
+			@include span-columns(12 of 12);
+			display: contents !important;
+			margin-left: 2em;
+			margin-bottom: 2rem !important;
+		}
+		@include respond-to($mobile-only) {
+			@include span-columns(12 of 12);
+			display: contents !important;
+			margin-left: 2em;
+			margin-bottom: 2rem !important;
+		}
+		.accelerator_heading {
+			width: 100%;
+			display: block;
+			margin: 0 auto;
+			@include respond-to($desktop) {
+				padding: 0;
+				margin-bottom: 0;
+				@include span-columns(6 of 12);
+			}
+			@include respond-to($mobile) {
+				@include span-columns(12 of 12);
+				margin-bottom: 2rem !important;
+				margin: 1rem 0rem 0rem 1rem !important;
+			}
+			@include respond-to($mobile-only) {
+				@include span-columns(12 of 12);
+				margin-bottom: 2rem !important;
+				margin: 1rem 0rem 0rem 1rem !important;
+			}
+			@include respond-to($tablet) {
+				@include span-columns(12 of 12);
+				margin-bottom: 2rem !important;
+				margin: 1rem 0rem 0rem 1rem !important;
+			}
+			h2 {
+				color: #75AC2A;
+				font-weight: bold !important;
+				font-size: 2.5rem;
+				margin-top: 4rem;
+				@include respond-to($small-mobile) {
+					@include span-columns(12 of 12);
+					font-size: 2rem;
+				}
+			}
+			h3 {
+				color: #404040;
+				font-size: 1.4rem;
+				margin: 1rem 11rem 0rem 0rem;
+				line-height: 1.8rem;
+				font-weight: 900 !important;
+				@include respond-to($small-mobile) {
+					@include span-columns(12 of 12);
+					margin-top: 1.2rem !important;
+					width: 95%;
+					margin-bottom: 2rem !important;
+					margin: 1rem 8rem 0rem 0rem;
+					font-size: 1.2rem;
+				}
+			}
+			p {
+				color: #181818;
+				font-size: 1.1rem;
+				margin: 1em 10em 0em 0em;
+				line-height: 1.6em;
+			}
+			ul {
+				list-style: none;
+				padding: 0;
+				line-height: 2.2rem;
+				color: #181818;
+				font-size: 1.1em;
+			}
+		}
+		.accelerator_banner_section_image {
+			img {
+				@include respond-to($tablet) {
+					margin-top: 4em;
+					margin-right: 10em;
+				}
+				@include respond-to($desktop) {
+					display: block;
+					margin: 0 auto;
+				}
+				@include respond-to($mobile) {
+					display: block;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+	.accelerator_banner_section_start_button {
+		button {
+			display: block;
+			padding: 1rem 3.7rem;
+			margin: 0 auto;
+			color: #ffffff;
+			border: none;
+			background-image: linear-gradient(to right, #abe741, #a3de40, #9fda3f, #9fda3f, #8bc53b, #93cd3d, #8bc53b);
+			border-radius: 50em;
+			font-size: 1.1em;
+			margin-top: 2em;
+			margin-bottom: 1.7em;
+			outline: none !important;
+			cursor: pointer;
+			transition: all .3s ease-out;
+		}
+		h2 {
+			text-align: center;
+			color: #93cd3d;
+			font-weight: 400;
+			font-size: 1.2em;
+			margin-bottom: 2em;
+			letter-spacing: .1rem;
+		}
+	}
+	.faq-sectoin {
+		width: 80%;
+		display: block;
+		margin: 0 auto;
+		p {
+			text-align: center;
+			width: 73%;
+			display: block;
+			margin: 1.5em auto;
+			line-height: 1.3em;
+			margin-bottom: 2em;
+			@include respond-to($mobile) {
+				@include span-columns(12 of 12);
+				text-align: center;
+				width: 100%;
+				display: block;
+				margin: 1.5em auto;
+				line-height: 1.5em;
+				margin-bottom: 2em;
+			}
+		}
+	}
+	.third__section__hubber {
+		h2 {
+			text-align: center;
+			font-weight: bold;
+			font-size: 2.5em;
+			margin-bottom: 2em;
+			margin-top: 2em;
+			color: #000;
+			@include respond-to($mobile) {
+				@include span-columns(12 of 12);
+				text-align: center;
+				width: 100%;
+				font-size: 1.8em;
+				display: block;
+				margin: 0em auto;
+				line-height: 1.5em;
+				margin-bottom: 1em;
+			}
+		}
+	}
+	.plateform_bg {
+		background-color: $white;
+		.plateform_form_section {
+			padding: 60px 0px;
+			.plateform_form_heading h2 {
+				font-size: 2.2rem;
+				text-align: center;
+			}
+			.form_subheading h2 {
+				font-size: 1.4em;
+				text-align: center;
+				font-weight: 900;
+				padding: 15px 0px 0px 0px;
+				@include respond-to($mobile) {
+					font-size: 18px;
+				}
+			}
+			.form_paragraph p {
+				font-size: 1.2em;
+				text-align: center;
+				line-height: 1.4em;
+				@include respond-to($mobile) {
+					font-size: 18px;
+				}
+			}
+			.plateform_form {
+				margin: 0 auto;
+				max-width: 850px;
+				width: 100%;
+				padding: 50px 60px;
+				margin-top: 75px;
+				box-shadow: 5px 1px 5px 5px rgba(0, 0, 0, 0.2), 2px 4px 5px 2px rgba(0, 0, 0, 0.19) !important;
+				background-color: #fff;
+				border-radius: 5px;
+			}
+			.plateform_form input[type="text"],
+			input[type="email"],
+			select {
+				height: 40px;
+				display: block;
+				margin: auto;
+				max-width: 550px;
+				width: 100%;
+				height: 35px;
+				border: 0;
+				border-bottom: solid 1px;
+				font-size: 18px;
+				color: #5f6061;
+				background-color: #fff;
+				font-size: 19px;
+			}
+			input.btn_submit {
+				padding: 15px 45px;
+				margin: 0 auto;
+				display: block;
+				border-radius: 50px;
+				font-size: 22px;
+				color: #fff;
+				border: none;
+				background: linear-gradient(to right, #abe741, #a3de40, #9fda3f, #9fda3f, #8bc53b, #93cd3d, #8bc53b);
+			}
+		}
+	}
+	.accelerator-work {
+		@include respond-to($desktop) {
+			max-width: 960px;
+			margin: 0 auto;
+		}
+		&__item {
+			color: #000;
+			display: flex;
+			flex-flow: row wrap;
+			margin-bottom: 35px;
+			min-height: 160px;
+			position: relative;
+			max-width: 440px;
+			@include respond-to($mobile) {
+				display: block;
+				min-height: 100%;
+			}
+			@include respond-to($tablet) {
+				display: block;
+				min-height: 100%;
+			}
+			@include respond-to($small-mobile) {
+				display: block;
+				min-height: 100%;
+			}
+		
+			&::after {
+				content: ' ';
+				display: block;
+				height: 2px;
+				width: 130px;
+				position: absolute;
+				transform: rotate(-40deg);
+			}
+
+			&:nth-child(2)::after {
+				background: #f7cdbc;
+				left: -105px;
+				top: 115px;
+				@include respond-to($mobile){
+					display: none;
+				}
+				@include respond-to($small-mobile){
+					display: none;
+				}
+				@include respond-to($tablet){
+					display: none;
+				}
+			}
+			&:nth-child(4)::after {
+				background: #e0daf1;
+				left: -102px;
+				top: 93px;
+				width: 115px;
+				transform: rotate(-40deg);
+				@include respond-to($mobile){
+					display: none;
+				}
+				@include respond-to($small-mobile){
+					display: none;
+				}
+				@include respond-to($tablet){
+					display: none;
+				}
+			}
+			&:nth-child(6)::after {
+				background: #dcf0b9;
+				left: -95px;
+				top: 80px;
+				width: 105px;
+				transform: rotate(-30deg);
+				@include respond-to($mobile){
+					display: none;
+				}
+				@include respond-to($small-mobile){
+					display: none;
+				}
+				@include respond-to($tablet){
+					display: none;
+				}
+			}
+			&:nth-child(1)::after {
+				background: #d2e5b7;
+				left: 425px;
+				top: 66px;
+				transform: rotate(20deg);
+				width: 95px;
+				@include respond-to($mobile){
+					display: none;
+				}
+				@include respond-to($small-mobile){
+					display: none;
+				}
+				@include respond-to($tablet){
+					display: none;
+				}
+			}
+			&:nth-child(3)::after {
+				background: #d4e4e9;
+				left: 425px;
+				top: 75px;
+				transform: rotate(25deg);
+				width: 105px;
+				@include respond-to($mobile){
+					display: none;
+				}
+				@include respond-to($small-mobile){
+					display: none;
+				}
+				@include respond-to($tablet){
+					display: none;
+				}
+			
+			}
+			&:nth-child(5)::after {
+				background: #e0b9e2;
+				left: 417px;
+				top: 90px;
+				transform: rotate(30deg);
+				width: 120px;
+				@include respond-to($mobile){
+					display: none;
+				}
+				@include respond-to($small-mobile){
+					display: none;
+				}
+				@include respond-to($tablet){
+					display: none;
+				}
+			}
+
+			
+			&--left {
+				@include respond-to($desktop) {
+					float: left;
+				}
+				img {
+					margin-left: auto;
+				}
+				.set_iamge_first{
+					@include respond-to($mobile){
+					position: absolute;
+					top: 70%;
+					right: 5%;
+				}
+			}
+				
+			}
+			&--right {
+				@include respond-to($desktop) {
+					margin-top: 3rem;
+					float: right;
+				}
+				&:nth-child(4),
+				&:nth-child(6) {
+					@include respond-to($desktop) {
+						margin-top: 2rem;
+					}
+				}
+				img {
+					margin-right: auto;
+				}
+				&::after {
+					left: -90px;
+					top: 105px;
+				}
+			}
+			&-left {
+				width: 125px;
+			}
+			&-right {
+				width: calc(100% - 135px);
+				@include respond-to($mobile){
+					margin-left: 2em;
+				}
+				@include respond-to($tablet){
+					margin-left: 2em;
+				}
+			}
+			img {
+				width: 80px;
+				display: block;
+				@include respond-to($mobile){
+					position: absolute;
+					right: 0;
+					right: 5%;
+					top: 11%;
+				}
+				@include respond-to($small-mobile){
+					position: absolute;
+					right: 0;
+					top: 11%;
+					right: 5%;
+				}
+				@include respond-to($tablet){
+					position: absolute;
+					right: 0;
+					top: 11%;
+					right: 5%;
+				}
+			}
+			h2 {
+				font-size: 1.4rem;
+				margin: 0 0 5px 0;
+			}
+			p {
+				margin: 0;
+				line-height: 1.5;
+			}
+		}
+	}
+}

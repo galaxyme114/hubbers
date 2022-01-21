@@ -1,0 +1,57 @@
+// Progress Bar
+
+.progress-bar {
+	padding: 1.875rem 0.75rem;
+
+	.progress-bar__inner {
+		height: 0.75rem;
+		background-color: $light-grey;
+		border-radius: 4px;
+	}
+
+	.progress-bar__track {
+		height: 100%;
+		background-color: $green;
+		border-radius: 4px;
+		transition: all 0.3s;
+	}
+
+	.progress-bar__count {
+		font-size: 1rem;
+		color: $green;
+		text-align: center;
+
+		position: relative;
+		top: -1.625rem;
+		left: 100%;
+
+		display: block;
+		width: 4rem;
+		height: 4rem;
+
+		padding: 1.3rem 0.5rem;
+		margin-left: -1.625rem;
+		background-color: #fff;
+
+		border: 2px solid $green;
+		border-radius: 50%;
+	}
+		@include respond-to($mobile) {
+		}
+
+	&.micro {
+		padding-left: 2.5rem;
+
+		.progress-bar__count {
+			@include respond-to($mobile) {
+				font-size: 0.875rem;
+				width: 3rem;
+				height: 3rem;
+
+				top: -1.225rem;
+				padding: 0.8rem 0.25rem;
+				margin-left: -1.225rem;
+			}
+		}
+	}
+}

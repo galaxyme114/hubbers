@@ -1,0 +1,52 @@
+.react-tabs {
+	&__tab-list {
+		border-bottom: 1px solid $border-grey;
+		margin: 0 0 1rem;
+		padding: 0 2rem;
+	}
+
+	&__tab {
+		font-size: 0.875rem;
+		letter-spacing: 0.05rem;
+		text-transform: uppercase;
+		color: $text-grey;
+		display: inline-block;
+		border: 0;
+		border-bottom: 3px solid transparent;
+		margin-right: 2rem;
+
+		.badge {
+			font-size: 0.75rem;
+			text-align: center;
+			padding: 0.125rem 0.5rem;
+			display: inline-block;
+			margin-left: 0.5rem;
+			margin-top: -0.125rem;
+			background-color: $background-grey;
+			border-radius: 5rem;
+		}
+
+		&--selected {
+			border-color: $green;
+			border-radius: 0;
+		}
+
+		&--disabled {
+			color: $text-grey;
+			opacity: 0.5;
+		}
+
+		&:focus {
+			box-shadow: none;
+			border-color: $green !important;
+
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	&__tab-panel {
+		padding: 1rem 2rem 2rem;
+	}
+}

@@ -1,0 +1,110 @@
+.project-tile__wrap {
+	@include span-columns(6 of 12);
+	@include omega(2n);
+}
+
+.project-tile {
+	@include clearfix();
+	position: relative;
+	border-radius: 4px;
+	margin-bottom: 2rem;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		box-shadow: 0 0 10px rgba(#000, 0.15);
+		opacity: 0;
+
+		transition: all 0.3s;
+	}
+
+	&:hover {
+		cursor: pointer;
+
+		&:before {
+			opacity: 1;
+		}
+	}
+
+	.project-tile__image {
+		position: relative;
+		padding-top: 56.25%;
+		background: $border-grey center;
+		background-size: cover;
+	}
+
+	.project-tile__details {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 1rem;
+
+		color: #fff;
+		background-color: rgba(#000, 0.5);
+
+		.project-tile__name {
+			font-size: 1.375rem;
+			margin-bottom: 0.25rem;
+		}
+
+		.project-tile__date {
+			font-size: 0.875rem;
+		}
+
+		.project-tile__stats {
+			@include clearfix;
+			margin-top: 0.5rem;
+
+			> div {
+				float: left;
+				margin-right: 1.5rem;
+
+				.icon {
+					position: relative;
+					top: 0.1rem;
+					margin-right: 0.125rem;
+					line-height: 1;
+					opacity: 0.75;
+				}
+
+				.icon-star-empty, .icon-star {
+					top: 0.05rem;
+				}
+			}
+		}
+	}
+
+	.project-tile__info {
+		background-color: #ffffff;
+		border: 1px solid $border-grey;
+		border-top: 0;
+		padding: 1rem;
+		line-height: 1.5rem;
+
+		.project-tile__info__indicator {
+			width: 1.5rem;
+			height: 1.5rem;
+			float: left;
+			margin-right: 0.5rem;
+			background-color: $light-grey;
+			border-radius: 50%;
+
+			&.pending {
+				background-color: $orange;
+			}
+		}
+
+		.project-tile__info__step {
+			strong {
+				color: $black;
+			}
+
+			color: $text-grey;
+		}
+	}
+}

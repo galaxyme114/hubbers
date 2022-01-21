@@ -1,0 +1,415 @@
+.grab-a-share__page {
+
+	.my-shares {
+		@extend .homepage-section;
+
+		.my-shares__title {
+			@extend .homepage-section__title;
+			margin-bottom: 4rem;
+		}
+
+		.my-shares__details__wrap {
+			padding: 0 1rem;
+
+			@include respond-to($desktop) {
+				padding: 0 2rem;
+			}
+		}
+
+		.my-shares__details {
+			margin: 0 auto 4rem;
+			text-align: center;
+
+			@include respond-to($desktop) {
+				@include span-columns(3 of 12);
+				text-align: left;
+				margin: 0;
+			}
+
+			.my-shares__details__item {
+				margin-bottom: 1rem;
+
+				.my-shares__details__item__label {
+					font-size: 0.875rem;
+					text-transform: uppercase;
+					letter-spacing: 0.05rem;
+					color: $text-grey;
+					margin-bottom: 0.25rem;
+				}
+
+				.my-shares__details__item__value {
+					font-size: 1.875rem;
+				}
+			}
+		}
+
+		.my-shares__chart {
+			@include respond-to($desktop) {
+				@include span-columns(9 of 12);
+			}
+		}
+	}
+
+	.hubbers-assets {
+		.hubbers-assets__metrics {
+			@include clearfix;
+
+			.hubbers-assets__metric {
+				margin-bottom: 1rem;
+
+				@include respond-to($desktop) {
+					@include span-columns(2 of 6);
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.hubbers-assets__metric {
+			border: 2px solid $border-grey;
+			background-color: $background-grey;
+			text-align: center;
+			border-radius: 0.25rem;
+			padding: 1rem;
+
+			.hubbers-assets__metric__label {
+				font-size: 0.875rem;
+				text-transform: uppercase;
+				letter-spacing: 0.075rem;
+			}
+
+			.hubbers-assets__metric__value {
+				@include clearfix;
+
+				font-size: 1.875rem;
+				font-weight: bold;
+				margin-top: 0.5rem;
+				color: $green;
+			}
+		}
+
+		.hubbers-assets__transactions {
+			@include clearfix;
+			margin-top: 2rem;
+			border: 1px solid $border-grey;
+
+			.hubbers-assets__transactions__tab-header {
+				//font-size: 0.875rem;
+				//text-transform: none;
+				@include clearfix;
+
+				.hubbers-assets__transactions__tab-header__label {
+					font-size: 1rem;
+					font-weight: bold;
+					text-transform: uppercase;
+					line-height: 1.5rem;
+					float: left;
+				}
+
+				.hubbers-assets__transactions__tab-header__value {
+					font-size: 1.5rem;
+					font-weight: bold;
+					line-height: 1.5rem;
+					text-transform: uppercase;
+					float: right;
+				}
+			}
+
+			.hubbers-assets__transactions__tab-description {
+				font-size: 0.75rem;
+				text-transform: none;
+				letter-spacing: 0;
+				line-height: 1.2;
+				margin-top: 0.5rem;
+			}
+
+			.hubbers-assets__transactions__tab-actions {
+				margin-top: 0.75rem;
+				@include clearfix;
+
+				button {
+					@extend .btn;
+					@extend .btn-outline;
+					font-size: 0.75rem;
+					padding: 0.375rem 0.5rem;
+					width: 100%;
+					margin-bottom: 1rem;
+				}
+
+				> button, > a, > span {
+					@include respond-to($desktop) {
+						@include span-columns(2 of 4);
+					}
+				}
+			}
+
+			.react-tabs__tab-list {
+				float: left;
+				width: 100%;
+				padding: 0;
+				border: 0;
+				border-right: 1px solid $border-grey;
+				margin-bottom: 0;
+
+				@include respond-to($desktop) {
+					width: 25%;
+				}
+
+				.react-tabs__tab {
+					width: 33.33333%;
+					margin: 0;
+					text-align: left;
+					padding: 1rem 1rem 0;
+					bottom: 0;
+					border-bottom: 1px solid $border-grey;
+
+					@include respond-to($desktop) {
+						width: 100%;
+						display: block;
+					}
+
+					&:last-child {
+						border-bottom: 0;
+					}
+
+					&:focus, &.react-tabs__tab--selected {
+						color: $white;
+						background-color: $green;
+
+						.hubbers-assets__transactions__tab-actions button {
+							border-color: $white;
+							color: $white;
+
+							&:hover {
+								background-color: $white;
+								color: $green;
+							}
+						}
+					}
+				}
+			}
+
+			.react-tabs__tab-panel {
+				width: 100%;
+				float: left;
+				padding: 0;
+
+				@include respond-to($desktop) {
+					width: 75%;
+				}
+			}
+		}
+	}
+
+	.hubbers-kpi {
+		@extend .homepage-section;
+		background-color: #fff;
+		padding-top: 2rem;
+		padding-bottom: 0;
+
+		.react-tabs__tab-list {
+			text-align: center;
+
+			@include respond-to($mobile) {
+				text-align: left;
+			}
+		}
+
+		.react-tabs__tab-panel {
+			@include respond-to($mobile) {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+
+		.react-tabs__tab {
+			@include respond-to($mobile) {
+				margin-bottom: 0.5rem;
+			}
+		}
+
+		.hubbers-kpi__notices {
+			padding: 0 2rem;
+
+			@include respond-to($desktop) {
+				padding: 1rem 2rem 1.5rem;
+				max-height: 400px;
+				overflow: auto;
+			}
+
+			.hubbers-kpi__notice {
+				margin-bottom: 3rem;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				.hubbers-kpi__notice__date {
+					font-size: 0.875rem;
+					color: $text-grey;
+					margin-bottom: 0.5rem;
+				}
+
+				.hubbers-kpi__notice__title {
+					font-size: 1.5rem;
+					margin-bottom: 0.5rem;
+				}
+
+				.hubbers-kpi__notice__content {
+					color: #666666;
+				}
+			}
+		}
+	}
+
+	.hubbers-kpi__charts {
+		@include clearfix();
+		padding-top: 1rem;
+
+		.hubbers-kpi__chart {
+			margin-bottom: 3rem;
+			padding: 0 1rem;
+
+			@include respond-to($desktop) {
+				@include span-columns(4 of 8);
+				@include omega(2n);
+			}
+
+			.hubbers-kpi__chart__title {
+				font-size: 1.25rem;
+				font-weight: normal;
+				text-transform: uppercase;
+				letter-spacing: 0.1rem;
+				margin-bottom: 1rem;
+				text-align: center;
+			}
+		}
+	}
+
+	.hubbers-kpi__documents__empty {
+		text-align: center;
+		padding: 3rem 2rem;
+
+		font-size: 1.25rem;
+		color: $text-grey;
+	}
+
+	.investors-list, .observers-list {
+		@extend .homepage-section;
+
+		&.investors-list {
+			background-color: $background-black;
+		}
+
+		&.observers-list {
+			background-color: $white;
+		}
+
+		.investors-list__title, .observers-list__title {
+			@extend .homepage-section__title;
+
+			&.investors-list__title {
+				color: #fff;
+			}
+
+			em {
+				color: $green;
+				font-style: normal;
+			}
+		}
+
+		.investors-list__items, .observers-list__items {
+			margin-top: 2.5rem;
+			padding: 0 2rem;
+
+			@include respond-to($desktop) {
+				padding: 0;
+			}
+		}
+
+		.investors-list__item, .observers-list__item {
+			padding: 1rem;
+			margin-bottom: 2rem;
+			background-color: #ffffff;
+			text-align: center;
+			border-radius: 0.1rem;
+
+			@include respond-to($mobile-only) {
+				@include span-columns(6 of 12);
+				@include omega(2n);
+			}
+
+			@include respond-to($tablet) {
+				@include span-columns(4 of 12);
+				@include omega(3n);
+			}
+
+			@include respond-to($desktop) {
+				@include span-columns(3 of 12);
+				@include omega(4n);
+			}
+
+			.investors-list__item__image, .observers-list__item__image {
+				width: 10rem;
+				margin: 0 auto;
+
+				> div {
+					padding-top: 100%;
+					border-radius: 50%;
+					margin-bottom: 1rem;
+
+					background: $background-grey center;
+					background-size: cover;
+				}
+			}
+
+			.investors-list__item__meta {
+				display: flex;
+				flex-direction: column;
+				min-height: 6rem;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.investors-list__item__name, .observers-list__item__name {
+				font-size: 1.75rem;
+				margin-bottom: 0.25rem;
+			}
+
+			.investors-list__item__caption, .observers-list__item__caption {
+				font-size: 1.125rem;
+			}
+
+			.investors-list__item__footer, .observers-list__item__footer {
+				@include clearfix;
+			}
+
+			.investors-list__item__shares, .observers-list__item__shares {
+				@include span-columns(1 of 2);
+				text-align: left;
+
+				label {
+					font-size: 0.75rem;
+					text-transform: uppercase;
+					letter-spacing: 0.1rem;
+					color: $text-grey;
+
+					display: block;
+				}
+
+				span {
+					font-size: 1.25rem;
+					display: block;
+					margin-top: 0.25rem;
+				}
+			}
+
+			.investors-list__item__linkedin, .observers-list__item__linkedin {
+				@include span-columns(1 of 2);
+
+				font-size: 2rem;
+				line-height: 2.625rem;
+				text-align: right;
+			}
+		}
+	}
+}

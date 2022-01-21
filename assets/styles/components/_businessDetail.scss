@@ -1,0 +1,337 @@
+.business-needs-detail {
+	text-align: center;
+	margin-top: -1rem !important;
+	@include respond-to($mobile) {
+		.need-details-header_row {
+			display: block !important;
+			.need-details-header_profile {
+				width: 30% !important;
+				display: inline-block !important;
+				padding: 0.5rem 0;
+			}
+			.need-details-header_name {
+				width: 70% !important;
+				display: inline-block !important;
+				padding: 0.5rem 0;
+			}
+			.need-details-header_amount {
+				width: 25% !important;
+				display: inline-block !important;
+				padding: 0.5rem 0;
+			}
+			.need-details-header_time {
+				width: 35% !important;
+				display: inline-block !important;
+				padding: 0.5rem 0;
+			}
+			.need-details-header_bids {
+				width: 25% !important;
+				display: inline-block !important;
+				padding: 0.5rem 0;
+			}
+			.need-details-header_accord {
+				width: 15% !important;
+				display: inline-block !important;
+				padding: 0.5rem 0;
+			}
+		}
+
+		.need-details-title_row {
+			display: block !important;
+			.need-details-title_profile {
+				width: 30% !important;
+				display: inline-block !important;
+				padding: 0.5rem 0;
+			}
+			.need-details-title_name {
+				width: 70% !important;
+				display: inline-block !important;
+				padding: 0.5rem 0;
+			}
+			.need-details-title_amount {
+				width: 25% !important;
+				display: inline-block !important;
+				padding: 0.5rem 0;
+			}
+			.need-details-title_time {
+				width: 35% !important;
+				display: inline-block !important;
+				padding: 0.5rem 0;
+			}
+			.need-details-title_bids {
+				width: 25% !important;
+				display: inline-block !important;
+				padding: 0.5rem 0;
+			}
+			.need-details-title_accord {
+				width: 15% !important;
+				display: inline-block !important;
+				padding: 0.5rem 0;
+			}
+		}
+
+		.accordian_box {
+			.accordian-white-box {
+				.accordian-header_row {
+					display: block !important;
+					.accordian-header_profile {
+						width: 25% !important;
+						display: inline-block !important;
+						padding: 0.5rem 0;
+					}
+					.accordian-header_name {
+						width: 25% !important;
+						display: inline-block !important;
+						padding: 0.5rem 0;
+						text-align: left !important;
+					}
+					.accordian-header_amount {
+						width: 25% !important;
+						display: inline-block !important;
+						padding: 0.5rem 0;
+					}
+					.accordian-header_time {
+						width: 25% !important;
+						display: inline-block !important;
+						padding: 0.5rem 0;
+					}
+					.accordian-header_button {
+						width: 100% !important;
+						display: inline-block !important;
+						padding: 0.5rem 0;
+					}
+				}
+				.accordian-title_row {
+					display: block !important;
+					.accordian-title_profile {
+						width: 25% !important;
+						display: inline-block !important;
+						padding: 0.5rem 0;
+					}
+					.accordian-title_name {
+						width: 25% !important;
+						display: inline-block !important;
+						padding: 0.5rem 0;
+					}
+					.accordian-title_amount {
+						width: 25% !important;
+						display: inline-block !important;
+						padding: 0.5rem 0;
+					}
+					.accordian-title_time {
+						width: 25% !important;
+						display: inline-block !important;
+						padding: 0.5rem 0;
+					}
+					.accordian-title_button {
+						width: 100% !important;
+						display: inline-block !important;
+						padding: 0.5rem 0;
+					}
+				}
+			}
+		}
+	}
+	.need-details-header_row {
+		width: 100%;
+		display: flex;
+		padding: 2.313rem 0rem 1.063rem 0rem;
+		background: #f9f9f9;
+		color: $text-grey;
+		font-size: 0.75rem;
+		border-bottom: 0.01rem solid $border-grey;
+		.need-details-header_profile {
+			width: 10%;
+		}
+		.need-details-header_name {
+			width: 36%;
+			text-align: left !important;
+		}
+		.need-details-header_amount {
+			width: 16%;
+		}
+		.need-details-header_time {
+			width: 16%;
+		}
+		.need-details-header_bids {
+			width: 8%;
+		}
+		.need-details-header_accord {
+			width: 8%;
+		}
+	}
+
+	.need-details-title_row {
+		width: 100%;
+		display: flex;
+		padding: 1.688rem 0.75rem 1.688rem 0;
+		background: $white;
+		font-size: 0.938rem;
+		border-bottom: 0.01rem solid $border-grey;
+
+		transition: all 0.3s;
+
+		&:hover {
+			//cursor: pointer;
+			background-color: lighten($white, 10%);
+		}
+
+		.need-details-title_profile {
+			width: 10%;
+			img {
+				height: 2.75rem;
+				//width: 2.75rem;
+			}
+		}
+		.need-details-title_name {
+			width: 36%;
+			text-align: left !important;
+		}
+
+		.need-details-title_tags {
+			margin-top: 0.5rem;
+			padding-right: 1rem;
+
+			> a {
+				margin-right: 0.5rem;
+			}
+		}
+
+		.need-details-title_amount {
+			width: 16%;
+			label {
+				color: $heading-text;
+				font-size: 0.75rem;
+			}
+		}
+		.need-details-title_time {
+			label {
+				color: $heading-text;
+				font-size: 0.75rem;
+			}
+			width: 16%;
+		}
+		.need-details-title_bids {
+			label {
+				color: $heading-text;
+				font-size: 0.75rem;
+			}
+			width: 8%;
+		}
+		.need-details-title_accord {
+			width: 8%;
+
+			img {
+				width: 0.813rem;
+			}
+
+			span {
+				font-size: 1.125rem;
+				padding: 1rem 0.5rem;
+				transition: all 0.3s;
+
+				&:hover {
+					cursor: pointer;
+					color: $green;
+				}
+			}
+		}
+	}
+
+	// .need-details-title_row{
+	// 	cursor: pointer;
+	// }
+
+	.accordian_box {
+		background: $black;
+		padding: 1.313rem 0.625rem;
+		.accordian-white-box {
+			background: #fff;
+			color: $black;
+			text-align: center;
+			border-radius: 0.313rem;
+			.accordian-header_row {
+				width: 100%;
+				display: flex;
+				// padding: 1rem;
+				padding: 1.688rem 0.75rem 1.063rem 0rem;
+				font-size: 0.75rem;
+				border-bottom: 0.01rem solid $border-grey;
+				.accordian-header_profile {
+					width: 16%;
+				}
+				.accordian-header_name {
+					width: 26%;
+					text-align: left !important;
+				}
+				.accordian-header_amount {
+					width: 16%;
+				}
+				.accordian-header_time {
+					width: 16%;
+				}
+				.accordian-header_button {
+					width: 26%;
+				}
+			}
+			.accordian-title_row {
+				width: 100%;
+				display: flex;
+				// padding: 1.5rem;
+				padding: 0.625rem 0rem 0.625rem 0rem;
+				// background: #333333;
+				// color:#fff;
+				font-size: 0.938rem;
+				border-bottom: 0.01rem solid $border-grey;
+				.accordian-title_profile {
+					width: 16%;
+					img {
+						height: 4.375rem;
+						width: 4.375rem;
+					}
+				}
+				.accordian-title_name {
+					width: 26%;
+					text-align: left !important;
+					padding-top: 0.938rem;
+					label {
+						color: $black;
+						font-size: 1.125rem;
+					}
+					p {
+						color: $text-grey;
+						font-size: 0.75rem;
+						margin: 0;
+					}
+				}
+				.accordian-title_amount {
+					padding-top: 0.938rem;
+					width: 16%;
+				}
+				.accordian-title_time {
+					padding-top: 0.938rem;
+					width: 16%;
+				}
+				.accordian-title_button {
+					width: 26%;
+					button {
+						margin: 0.375rem;
+						padding: 0.438rem 0.813rem;
+						border-radius: 0.313rem;
+					}
+					.button-select-now {
+						color: $background-grey;
+						background-color: $green;
+					}
+					.button-shortlist {
+						color: $green;
+						background-color: $white;
+						border-color: $green;
+					}
+				}
+			}
+		}
+	}
+}
+
+// border: 0.1rem solid #fff;

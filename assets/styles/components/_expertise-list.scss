@@ -1,0 +1,77 @@
+// Expertise list
+
+.expertise-intro {
+	text-align: center;
+	padding: 0 1rem;
+
+	.expertise-intro__title {
+		font-size: 1.25rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 0.05rem;
+		word-spacing: 0.2rem;
+		line-height: 1.5;
+
+		max-width: 720px;
+		margin: 0 auto -3rem;
+	}
+
+	.expertise-intro__image {
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}
+
+.expertise-list {
+	color: #fff;
+	background-color: #232323;
+	padding: 6rem 1rem 0;
+
+	.expertise-list__title {
+		font-size: 2.125rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+
+	.expertise-list__list {
+		@include clearfix();
+		margin-bottom: 4rem;
+
+		@include respond-to($mobile) {
+			padding: 0 1.5rem;
+		}
+
+		.expertise {
+			margin-bottom: 2rem;
+
+			@include respond-to($desktop) {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.expertise-list__image-wrap {
+		text-align: center;
+	}
+
+	.expertise-list__image {
+		display: block;
+	}
+
+	.expertise-list__image-title {
+		font-size: 1.25rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 0.05rem;
+		word-spacing: 0.2rem;
+		line-height: 1.5;
+		text-align: center;
+
+		max-width: 630px;
+		margin: 0 auto 3rem;
+	}
+}

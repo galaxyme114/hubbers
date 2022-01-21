@@ -1,0 +1,76 @@
+.expertise-offers {
+	.expertise-offers__table {
+		.expertise-offers__table__header, .expertise-offers__table__row {
+			display: flex;
+			flex-direction: row;
+			padding: 1rem;
+
+			> span {
+				display: flex;
+			}
+
+			> span:nth-child(1), > span:nth-child(3) {
+				flex: 1;
+			}
+
+			> span:nth-child(2) {
+				flex: 8;
+			}
+		}
+
+		.expertise-offers__table__header {
+			padding-top: 0.25rem;
+			padding-bottom: 0.75rem;
+
+			> span {
+				font-size: 0.75rem;
+				font-weight: bold;
+				text-transform: uppercase;
+				letter-spacing: 0.075rem;
+				color: $text-grey;
+			}
+		}
+
+		.expertise-offers__table__row {
+			background: $background-grey;
+			border-radius: 0.1rem;
+
+			&:hover {
+				cursor: pointer;
+			}
+
+			span:first-child {
+				> i {
+					position: relative;
+					width: 1.25rem;
+					height: 1.25rem;
+
+					background-color: $border-grey;
+
+					&:before {
+						content: ' ';
+						width: 0.75rem;
+						height: 0.75rem;
+						background-color: $green;
+						position: absolute;
+						top: 0.25rem;
+						left: 0.25rem;
+
+						opacity: 0;
+					}
+
+					&.active {
+						&:before {
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.expertise-offers__cta {
+		margin-top: 2rem;
+		text-align: center;
+	}
+}

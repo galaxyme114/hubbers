@@ -1,0 +1,172 @@
+.emailsetting-page-heading{
+	
+	padding: 4rem 2rem 4rem 2rem;
+	background: $green;
+	@include respond-to($mobile) {
+		.setting_img{
+			display: none
+		}
+	}
+	.container{
+		position: relative;
+		.emailsetting-heading__title{
+			font-size: 72px;
+			color: $white;
+			//text-align: center;
+			margin-bottom: 0rem;
+		}
+		.emailsetting-heading__caption{
+			font-size: 24px;
+			color: $white;
+			//text-align: center;
+			margin: 0rem;
+			padding-top: 1rem;
+			padding-bottom: 0.5rem;
+		}
+		.setting_img{
+			width: 250px;
+			position: absolute;
+			bottom: -4rem;
+			right: 0px;
+		}
+	}
+}
+.emailsetting-wrap{
+	.emailsetting-container{
+		@extend .container;
+		// max-width: 60rem;
+		@include respond-to($mobile) {
+			.emailsetting-section{
+				padding: 1rem 1rem 3rem 1rem !important;
+			}
+			table{
+				tr{
+					.left__section{
+						width: 100% !important;
+						display: block !important;
+						border-bottom: none !important;
+					}
+					.right__section{
+						width: 100% !important;
+						display: block !important;
+					}
+				}
+			}
+		}
+		@include respond-to($mobile-only) {
+			.emailsetting-section{
+				padding: 1rem 1rem 3rem 1rem !important;
+			}
+			table{
+				tr{
+					.left__section{
+						width: 100% !important;
+						display: block !important;
+						border-bottom: none !important;
+					}
+					.right__section{
+						width: 100% !important;
+						display: block !important;
+					}
+				}
+			}
+		}
+		@include respond-to($tablet) {
+			.emailsetting-section{
+				padding: 1rem 1rem 3rem 1rem !important;
+			}
+			table{
+				tr{
+					.left__section{
+						width: 100% !important;
+						display: block !important;
+						border-bottom: none !important;
+					}
+					.right__section{
+						width: 100% !important;
+						display: block !important;
+					}
+				}
+			}
+		}
+		.emailsetting-section{
+			@include clearfix;
+			padding: 0rem 0rem 3rem;
+			border-radius: 0.1rem;
+			// margin-bottom: 4rem;
+			// .emailsetting__row{
+			// 	.emailsetting__col8{
+			// 		@include respond-to($desktop) {
+			// 			@include span-columns(8 of 12);
+			// 		}
+			// 		.emailsetting__col8__title{
+			// 			font-size: 15px;
+			// 			font-weight: bold;
+			// 			text-transform: uppercase;
+			// 		}
+			// 		.emailsetting__col8__description{
+			// 			font-size: 14px;
+			// 			color: #838383;
+			// 		}
+			// 	}
+			// 	.emailsetting__col4{
+			// 		@include respond-to($desktop) {
+			// 			@include span-columns(4 of 12);
+			// 		}
+			// 		text-align: right;
+			// 	}
+			// }
+			
+			table{
+				border-spacing: 0px;
+				tbody{
+					tr td {
+						border-bottom: 1pt solid #adadad;
+					}
+
+					tr:last-child td {
+						border-bottom: 0;
+					}
+
+					tr{
+						.left__section{
+							width: 60%;
+							padding: 2rem 0rem;
+							.emailsetting__col8__title{
+								font-size: 1.25rem;
+								font-weight: bold;
+								text-transform: uppercase;
+								margin: 0;
+							}
+							.emailsetting__col8__description{
+								font-size: 1rem;
+								color: #838383;
+								margin: 0;
+								padding-top: 10px;
+							}
+						}
+						.right__section{
+							padding: 3rem 0rem;
+							width: 40%;
+							text-align: right;
+							.btn{
+								padding: 1rem 1.5rem;
+
+								&:first-child {
+									border-radius: 4px 0 0 4px;
+								}
+
+								&:last-child {
+									border-radius: 0 4px 4px 0;
+								}
+							}
+							.deactivebtn{
+								background: #d8d8d8 !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

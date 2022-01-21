@@ -1,0 +1,84 @@
+// Result modal
+
+.result-modal {
+	@extend .modal;
+	z-index: 1004;
+
+	.result-modal__body {
+		@extend .modal-body;
+		max-width: 680px;
+	}
+
+	.result-modal__header {
+		padding: 2.5rem 0 1.5rem;
+		color: $white;
+		background-color: $green;
+		text-align: center;
+
+		.result-modal__header__title {
+			font-size: 2.5rem;
+			font-weight: bold;
+			text-transform: uppercase;
+			margin-bottom: 1.25rem;
+			letter-spacing: 0.025rem;
+
+			.icon-result-progress {
+				font-size: 3.3rem;
+				position: relative;
+				top: 0.4rem;
+			}
+
+			.icon-stars-sm, .icon-stars-lg {
+				line-height: 0;
+				display: inline-block;
+				width: 4rem;
+			}
+
+			.icon-stars-lg {
+				font-size: 4rem;
+			}
+		}
+
+		.result-modal__header__content {
+			font-size: 1.675rem;
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 0.025rem;
+
+			strong {
+				font-size: 4rem;
+				display: block;
+				margin-top: 1.5rem;
+			}
+		}
+	}
+
+	.result-modal__body__inner {
+		background-color: $white;
+		padding: 1rem 1rem 0;
+	}
+
+	.result-modal__registration {
+		border-bottom: 1px solid $border-grey;
+	}
+
+	.result-modal__message__wrap {
+		margin-bottom: 2rem;
+	}
+
+	.result-modal__message {
+		text-align: center;
+		margin: 0 auto;
+		padding: 0 0.7rem;
+		line-height: 1.5;
+	}
+
+	.result-modal__expertise {
+
+	}
+
+	.show-result-modal & {
+		opacity: 1;
+		visibility: visible;
+	}
+}

@@ -1,0 +1,201 @@
+.eventpage-section {
+	padding: 4rem 0;
+
+	.event__list {
+		.event__list__items {
+			display: flex;
+			width: 100%;
+			padding-left: 1.875rem;
+			padding-right: 1.875rem;
+			margin-bottom: 1.25rem;
+
+			> a {
+				display: flex;
+			}
+
+			.event_items_firstsection{
+				float: left;
+				display: block;
+				width: 100%;
+				background-color: $white;
+				border-left: 1px solid $background-grey;
+
+				@include respond-to($desktop) {
+					width: 75%;
+				}
+
+				.event_items_first_inner{
+					width: 11.25rem;
+					height: 100%;
+					float: left;
+					display: block;
+					background: $background-black;
+					color: $white;
+					text-align: center;
+					position: relative;
+					border-radius: 0.375rem;
+
+					@include respond-to($mobile) {
+						//width: 100%;
+						//height: auto;
+						//float: none;
+						display: none;
+					}
+
+					.event_items_first_inner_datetime{
+						.event_items_date{
+							line-height: 1.875rem;
+							margin-top: 0;
+							margin-bottom: 0;
+							padding-top: 3.4375rem;
+							padding-bottom: 1.25rem;
+							.event__date_text{
+								font-size: 4rem;
+								font-weight: bold;
+							}
+							.event__date_month{
+								font-size: 1.875rem;
+								font-weight: bold;
+								text-transform: uppercase;
+							}
+						}
+						.event_items_time{
+							color: #a4a4a4;
+							font-size: 1.5rem;
+							position: relative;
+							p{
+								margin-top: 0;
+								margin-bottom: 0;
+								padding-bottom: 1.25rem;
+							}
+							span{
+								position: absolute;
+								top: -0.125rem;
+								right: 2.8125rem;
+								//
+								//@include respond-to($mobile) {
+								//	display: none;
+								//}
+							}
+						}
+					}
+					.event_items_first_inner_register{
+						position: absolute;
+						bottom: 0;
+						width: 100%;
+						background: $green;
+						border-radius: 0rem 0rem 0.375rem 0.375rem;
+						font-size: 1.125rem;
+						font-weight: bold;
+						padding-top: 1.25rem;
+						padding-bottom: 1.25rem;
+						cursor: pointer;
+					}
+				}
+				.event_items_secondsection{
+					margin-left: 11.25rem;
+					// float: left;
+					display: block;
+					background-color: $white;
+					padding: 2rem;
+					padding-top: 1.25rem !important;
+					padding-bottom: 1.25rem !important;
+					position: relative;
+					height: 100%;
+
+					@include respond-to($mobile) {
+						margin-left: 0;
+					}
+
+					.event_items_heading{
+						border-bottom: 0.0625rem solid #e2e2e2;
+						padding-bottom: 1.25rem;
+						.event_items_city__title{
+							font-size: 1.875rem;
+							font-weight: bold;
+							color: $green;
+							text-transform: uppercase;
+						}
+						.event_items_city__Location{
+							color: $text-grey;
+							font-size: 0.875rem;
+							margin-top: 1rem;
+
+							span{
+								position: relative;
+								//top: 0.4375rem;
+								margin-right: 0.5rem;
+								left: -0.1875rem;
+								display: block;
+								float: left;
+
+								img{
+									width: 1.5625rem;
+								}
+							}
+						}
+					}
+					.event_items_event_body{
+						padding-top: 2.1875rem;
+						.event_items_event__title{
+							font-size: 1.875rem;
+							color: $text-black;
+							cursor: pointer;
+						}
+						.event_items_event__desc{
+							padding-top: 0.625rem;
+							font-size: 1.125rem;
+							color: $text-black;
+						}
+					}
+					.event_items_footer_text{
+						// position: absolute;
+						// bottom: 1.5rem;
+						padding-top: 3.125rem;
+						.event_items_footer__item{
+							position: relative;
+							color: $text-grey;
+							padding-right: 2rem;
+
+							span{
+								position: relative;
+								top: 0.4375rem;
+								margin-right: 0.5rem;
+								left: -0.1875rem;
+								img{
+									width: 1.5625rem;
+								}
+							}
+							.event_speaker_text{
+								color: $text-black;
+							}
+
+							.event_items_footer__item__speaker-label {
+								float: left;
+								margin-right: 1rem;
+								margin-top: -0.675rem;
+								margin-bottom: 1rem;
+							}
+
+							.event_items_footer__item__speaker-list {
+
+							}
+						}
+					}
+				}
+			}
+			
+			.event_items_thirdsection{
+				float: left;
+				width: 25%;
+				background: $white center;
+				background-size: cover;
+				display: none;
+
+				@include respond-to($desktop) {
+					display: block;
+				}
+			}
+		}
+	}
+}

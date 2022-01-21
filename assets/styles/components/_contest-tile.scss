@@ -1,0 +1,168 @@
+.contest-tile__wrap {
+	@include respond-to($desktop) {
+		@include span-columns(6 of 12);
+		@include omega(2n);
+	}
+
+	&.unlink {
+		pointer-events: none;
+	}
+}
+
+.contest-tile {
+	@include clearfix();
+	position: relative;
+	border-radius: 4px;
+	margin-bottom: 2rem;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		box-shadow: 0 0 10px rgba(#000, 0.15);
+		opacity: 0;
+
+		transition: all 0.3s;
+	}
+
+	&:hover {
+		cursor: pointer;
+
+		&:before {
+			opacity: 1;
+		}
+	}
+
+	.contest-tile__image {
+		position: relative;
+		padding-top: 56.25%;
+		background: $border-grey center;
+		background-size: cover;
+	}
+
+	.contest-tile__details {
+		// position: absolute;
+		// bottom: 0;
+		// left: 0;
+		// right: 0;
+		// padding: 1rem;
+
+		color: #a3a3a3;
+		margin-top: 0.5rem;
+		// background-color: rgba(#000, 0.75);
+
+		.contest-tile__stats {
+			@include clearfix;
+
+			> div {
+				float: left;
+				margin-right: 1.5rem;
+				transition: all 0.3s;
+
+				&:not(.contest-tile__stats--views) {
+					&:hover, &.active {
+						color: $green;
+					}
+				}
+
+				.icon {
+					position: relative;
+					top: 0.1rem;
+					margin-right: 0.125rem;
+					line-height: 1;
+					opacity: 0.75;
+				}
+
+				.icon-star-empty, .icon-star {
+					top: 0.05rem;
+				}
+			}
+		}
+	}
+
+	.contest-tile__name {
+		font-size: 1.375rem;
+		margin-bottom: 0.25rem;
+		color: $text-black;
+		font-family: 'Avenir-Black';
+	}
+
+	.contest-tile__date {
+		font-size: 0.875rem;
+		color: $text-black;
+		font-family: 'Avenir-Roman';
+	}
+
+	.contest-tile__info {
+		position: relative;
+		background-color: #ffffff;
+		border: 1px solid $border-grey;
+		border-top: 0;
+		padding: 1rem;
+		line-height: 1.5rem;
+
+		.contest-tile__info__meta.contest-tile__info__meta--padding {
+			padding-right: 8rem;
+		}
+
+		.contest-tile__info__application {
+			position: absolute;
+			width: 8rem;
+			top: 0;
+			right: 0;
+			height: 100%;
+			padding: 0.5rem;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+
+			img {
+				max-width: 2.5rem;
+				margin-bottom: 0.5rem;
+				height: auto;
+			}
+
+			span {
+				font-size: 0.75rem;
+				letter-spacing: 0.05rem;
+				display: block;
+				text-transform: uppercase;
+				color: $text-grey;
+			}
+		}
+
+		.contest-tile__info__title {
+			font-size: 0.875rem;
+			margin-top: 0.5rem;
+			font-family: 'Avenir-Black';
+		}
+
+		.contest-tile__info__indicator {
+			width: 1.5rem;
+			height: 1.5rem;
+			float: left;
+			margin-right: 0.5rem;
+			background-color: $light-grey;
+			border-radius: 50%;
+
+			&.pending {
+				background-color: $orange;
+			}
+		}
+
+		.contest-tile__info__step {
+			strong {
+				color: $black;
+			}
+
+			color: $text-grey;
+		}
+	}
+}

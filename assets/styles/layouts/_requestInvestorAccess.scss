@@ -1,0 +1,276 @@
+.homepage-section {
+	padding: 4rem 0;
+}
+
+.homepage-section__title {
+	font-size: 1.5rem;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	text-align: center;
+	text-transform: uppercase;
+
+	margin-bottom: 0.5rem;
+	padding: 0 1rem;
+
+	@include respond-to($desktop) {
+		padding: 0;
+	}
+}
+
+.homepage-section__subtitle {
+	font-size: 1rem;
+	text-align: center;
+	padding: 0 1rem;
+
+	@include respond-to($desktop) {
+		padding: 0;
+	}
+}
+.access-grabshare{
+	@extend .homepage-section;
+
+	.access-grabshare__items {
+		// margin-top: 2.5rem;
+		padding: 0 1rem;
+
+		@include respond-to($desktop) {
+			padding: 0;
+		}
+	}
+	.access-grabshare__items_title{
+		text-align: center;
+		font-size: 24px;
+		font-weight: 600;
+		margin-bottom: 1.5rem;
+	}
+	.access-grabshare__item{
+		margin-bottom: 2rem;
+
+		@include respond-to($desktop) {
+			@include span-columns(4 of 12);
+			margin-bottom: 0;
+		}
+		@include respond-to($tablet) {
+			@include span-columns(4 of 12);
+			margin-bottom: 0;
+		}
+		text-align: center;
+		padding: 20px 20px;
+		.access-grabshare__item__icon {
+			width: 100px;
+			height: 100px;
+			border: 3px solid $green;
+			border-radius: 100px;
+			text-align: center;
+			margin: auto;
+			.icon1{
+				width: 45px;
+				margin-top: 28px;
+			}
+			.icon2{
+				width: 45px;
+				margin-top: 26px;
+			}
+			.icon3{
+				width: 45px;
+				margin-top: 24px;
+			}
+		}
+		.access-grabshare__item__caption{
+			font-size: 18px;
+			color: #232323;
+			padding-top: 20px;
+		}
+	}
+}
+.allows-useto {
+	@extend .homepage-section;
+	background-color: $background-black;
+	color: #fff;
+
+	.allows-useto__title {
+		@extend .homepage-section__title;
+	}
+
+	.allows-useto__subtitle {
+		@extend .homepage-section__subtitle;
+	}
+
+	.allows-useto__items {
+		margin-top: 2.5rem;
+		padding: 0 1rem;
+
+		@include respond-to($desktop) {
+			padding: 0;
+		}
+	}
+
+	.allows-useto__item {
+		margin-bottom: 2rem;
+
+		@include respond-to($desktop) {
+			@include span-columns(4 of 12);
+			margin-bottom: 0;
+		}
+
+		.allows-useto__item__image {
+			padding-top: 66.66666%;
+			background: #212121 center 0;
+			background-size: cover;
+			border-radius: 0.25rem;
+		}
+
+		.allows-useto__item__caption {
+			font-size: 18px;
+			line-height: 1.5;
+			font-weight: bold;
+			letter-spacing: 0.1rem;
+			text-align: center;
+			text-transform: capitalize;
+			color: $white;
+
+			margin-top: 1.25rem;
+			transition: all 0.3s;
+		}
+		.allows-useto__item__subcaption {
+			font-size: 14px;
+			line-height: 1.5;
+			letter-spacing: 0.1rem;
+			text-align: center;
+			text-transform: capitalize;
+			color: $white;
+			margin-top: 0.5rem;
+			transition: all 0.3s;
+		}
+	}
+}
+.access-grab-desh{
+	
+	margin-top: 2rem;
+	@include respond-to($desktop) {
+		margin-left: 200px;
+		margin-right: 200px;
+		padding: 2rem 0 4rem 0;
+	}
+	@include respond-to($tablet) {
+		margin-left: 50px;
+		margin-right: 50px;
+		padding: 2rem 0 4rem 0;
+	}
+	@include respond-to($mobile) {
+		.access-grab-desh__form{
+			padding: 0 1rem;
+			margin-bottom: 30px;
+		}
+	}
+	@include respond-to($mobile-only) {
+		.access-grab-desh__form{
+			padding: 0 1rem;
+			margin-bottom: 30px;
+		}
+	}
+	.access-grab-desh__title {
+		@extend .homepage-section__title;
+	}
+	.access-grab-desh__items {
+		margin-top: 2.5rem;
+		padding: 0 1rem;
+		@include respond-to($desktop) {
+			padding: 0;
+			display: flex;
+		}
+		@include respond-to($tablet) {
+			padding: 0;
+			display: flex;
+		}
+	}
+	.access-grab-desh__items_title{
+		text-align: center;
+		font-size: 24px;
+		font-weight: 600;
+		margin-bottom: 1.5rem;
+	}
+	.access-grab-desh__item {
+		margin-bottom: 2rem;
+		padding: 0 1rem;
+		
+		@include respond-to($desktop) {
+			@include span-columns(6 of 12);
+			margin-bottom: 0;
+			padding: 0 3rem;
+		}
+		@include respond-to($tablet) {
+			@include span-columns(6 of 12);
+			margin-bottom: 0;
+			padding: 0 3rem;
+		}
+		.access-grab-desh__icon{
+			width: 100px;
+			height: 100px;
+			border: 3px solid $green;
+			border-radius: 100px;
+			margin: auto;
+			text-align: center;
+			margin-top: 2rem;
+			img{
+				width: 45px;
+				margin-top: 24px;
+			}
+		}
+		.access-grab-desh__item_title{
+			text-align: center;
+			font-size: 18px;
+			margin-top: 1.3rem;
+		}
+		.access-grab-desh__caption{
+			text-align: center;
+			color: #858585;
+			font-size: 14px;
+			margin-top: 1rem;
+		}
+		.access-grab-desh__link{
+			text-align: center;
+			color: $green;
+			font-size: 18px;
+			margin-top: 1rem;
+		}
+	}
+	.access-grab-desh__form{
+		padding-top: 80px;
+		@include respond-to($desktop) {
+			width: 500px;
+			margin: auto;
+		}
+		.access-grab-desh__form__loading {
+			padding: 4rem 2rem;
+			text-align: center;
+	
+			.sk-spinner {
+				> div {
+					background-color: $green;
+				}
+			}
+		}
+		.access-grab-desh__form__notice {
+			border-radius: 0.25rem;
+			padding: 0.75rem 1.5rem;
+			margin-bottom: 2rem;
+			margin-top: -1rem;
+	
+			background-color: $background-grey;
+		}
+	
+		.access-grab-desh__form__notice--success {
+			color: $green;
+			background-color: $background-green;
+		}
+	
+		.access-grab-desh__form__notice--danger {
+			color: #484848;
+			background-color: $background-red
+		}
+		.access-grab-desh__form_btn{
+			text-align: center;
+		}
+	}
+}

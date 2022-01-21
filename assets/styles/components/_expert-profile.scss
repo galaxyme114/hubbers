@@ -1,0 +1,119 @@
+.expert-profile {
+	@include clearfix();
+
+	.expert-profile__meta {
+		@include span-columns(2.75 of 12);
+		text-align: center;
+
+		.expert-profile__thumbnail {
+			width: 8rem;
+			padding-top: 100%;
+			border-radius: 50%;
+			margin: 0 auto 0.5rem;
+			max-width: 100%;
+
+			background: $background-grey center;
+			background-size: cover;
+		}
+
+		.expert-profile__rating {
+			margin-bottom: 0.75rem;
+
+			.rating, .reviews {
+				font-size: 0.875rem;
+			}
+
+			.rating {
+				color: $green;
+			}
+
+			.reviews {
+				color: $text-grey;
+			}
+		}
+
+		.expert-profile__contact {
+			font-size: 0.875rem;
+			padding: 0.5rem 0.75rem;
+			border-radius: 4px;
+		}
+	}
+
+	.expert-profile__info {
+		@include span-columns(9.25 of 12);
+		padding-left: 1rem;
+
+		.expert-profile__name {
+			font-size: 2rem;
+			font-weight: normal;
+			margin-bottom: 0.25rem;
+		}
+
+		.expert-profile__caption {
+			font-size: 1.125rem;
+		}
+	}
+
+	.expert-profile__bio {
+		margin-top: 0.5rem;
+
+		.ellipsis {
+			font-size: 0.875rem;
+			display: block;
+			margin-top: 0.25rem;
+
+			a {
+				color: $green;
+			}
+		}
+	}
+	
+	&.micro {
+		position: relative;
+		padding-left: 1.5rem;
+
+		&:before {
+			content: ' ';
+			width: 1px;
+			position: absolute;
+			top: -2rem;
+			left: 0;
+			bottom: -3rem;
+			background-color: $border-grey;
+		}
+
+		.expert-profile__meta {
+			@include span-columns(3 of 12);
+		}
+
+		.expert-profile__info {
+			@include span-columns(9 of 12);
+			margin-right: 0;
+
+			.expert-profile__name {
+				font-size: 1.75rem;
+				margin-bottom: 0;
+			}
+
+			.expert-profile__caption {
+				font-size: 1.125rem;
+				display: block;
+				margin-bottom: 0.5rem;
+			}
+		}
+
+		.expert-profile__rating {
+			@include clearfix();
+
+			.star-rating {
+				float: left;
+				margin-right: 0.5rem;
+			}
+		}
+
+		.expert-profile__bio {
+			float: left;
+			margin-top: 1rem;
+		}
+	}
+}

@@ -1,0 +1,116 @@
+{
+  "items": [
+    {
+      "id": "5aff90929477100015b2bb7c",
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/home/ideation.png",
+      "slug": "ideation",
+      "name": "Brainstorming",
+      "description": "Do you have a technical problem that needs a solution? Talk to one of our experts, a seasoned professional to discuss your ideas."
+    },
+    {
+      "id": "5aff90929477100015b2bb7d",
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/home/design.png",
+      "slug": "design",
+      "name": "Design",
+      "description": "Choose from experienced graphic designers to cover all design requirements for your brand."
+    },
+    {
+      "id": "5aff90929477100015b2bb7e",
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/home/legal.png",
+      "slug": "legal",
+      "name": "Legal",
+      "description": "Get legal advice, support, and trademark protection according to the country and region where you plan to sell your product."
+    },
+    {
+      "id": "5aff90929477100015b2bb7f",
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/home/prototyping.png",
+      "slug": "prototyping",
+      "name": "Prototyping",
+      "description": "Create a sample or prototype, and test its feasibility and functionality before starting mass production."
+    },
+    {
+      "id": "5aff90929477100015b2bb80",
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/home/manufacturing.png",
+      "slug": "manufacturing",
+      "name": "Manufacturing",
+      "description": "Find reliable factories where you can produce in high quality and for a reasonable price."
+    },
+    {
+      "id": "5aff90929477100015b2bb81",
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/home/sales.png",
+      "slug": "sales-distribution",
+      "name": "Sales & Distribution",
+      "description": "Are you ready to go to market? Connect with sales and distribution specialists in your niche and on the targeted markets."
+    },
+    {
+      "id": "5aff90929477100015b2bb82",
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/home/marketing.png",
+      "slug": "marketing",
+      "name": "Marketing",
+      "description": "Create the most suitable strategy and marketing plan for your brand with step-by-step execution."
+    },
+    {
+      "id": "5aff90929477100015b2bb83",
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/home/packaging.png",
+      "slug": "packaging",
+      "name": "Packaging",
+      "description": "Build beautiful, functional and practical packaging that displays your invention in the best possible light."
+    },
+    {
+      "id": "5aff90929477100015b2bb84",
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/home/web-app.png",
+      "slug": "web-app",
+      "name": "Web & App",
+      "description": "Custom-built or template based, build the website that fits your budget and caters precisely to your requirements."
+    },
+    {
+      "id": "5aff90929477100015b2bb85",
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/home/communication.png",
+      "slug": "communication",
+      "name": "Communication",
+      "description": "Are you ready to go to market? Connect with sales and distribution specialist in your niche and on the targeted markets."
+    },
+    {
+      "id": "5aff90929477100015b2bb86",
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/home/social-media.png",
+      "slug": "social-medias",
+      "name": "Social Medias",
+      "description": "Get noticed, stay connected and find influencers to help to promote and sell your product."
+    },
+    {
+      "id": "5aff90929477100015b2bb87",
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/home/project.png",
+      "slug": "project-management",
+      "name": "Project management",
+      "description": "From idea to market, experienced professionals bring your project to successful completion."
+    },
+    {
+      "id": "5aff90929477100015b2bb88",
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/home/crowdfunding.png",
+      "slug": "crowdfunding",
+      "name": "Crowd Funding",
+      "description": "Develop and run a successful campaign for your brand with targeted pre-campaigns and after campaign follow-ups."
+    },
+    {
+      "id": "5aff90929477100015b2bb89",
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/home/purchasing.png",
+      "slug": "purchasing",
+      "name": "Purchasing",
+      "description": "Are you looking for new and exciting products on the market? Connect with inventors and creators in your niche to find the products you need."
+    },
+    {
+      "id": "5aff90929477100015b2bb8a",
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/home/logistic.png",
+      "slug": "logistic",
+      "name": "Logistic",
+      "description": "Arrange all your shipping, customs, and logistics related administration through experienced and reliable professionals."
+    },
+    {
+      "id": "5aff90929477100015b2bb8b",
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/home/fundraising.png",
+      "slug": "fundraisings",
+      "name": "Fundraising",
+      "description": "You have a perfect idea but it needs funding? Find investors to help you to make your product a reality."
+    }
+  ]
+}

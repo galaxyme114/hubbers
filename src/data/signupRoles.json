@@ -1,0 +1,139 @@
+{
+  "default": [
+    {
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/signup/signup-feature-1.png",
+      "title": "EARN MONEY",
+      "description": "Invest in innovative and exciting products."
+    },
+    {
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/signup/signup-feature-2.png",
+      "title": "BECOME A JUDGE",
+      "description": "Offer your opinion on innovative contests and new projects."
+    },
+    {
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/signup/signup-feature-3.png",
+      "title": "BECOME A SUPER-EXPERT",
+      "description": "Lead product creation and development of projects from idea to market."
+    },
+    {
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/signup/signup-feature-4.png",
+      "title": "SUPPORT NEW TALENTS",
+      "description": "Inspire, get involved, and provide help in making creator's 'dream product' comes true."
+    }
+  ],
+  "expert": [
+    {
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/signup/signup-feature-3.png",
+      "title": "EARN MONEY",
+      "description": "Invest in innovative and exciting products."
+    },
+    {
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/signup/signup-feature-5.png",
+      "title": "BECOME A JUDGE",
+      "description": "Offer your opinion on innovative contests and new projects."
+    },
+    {
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/signup/signup-feature-2.png",
+      "title": "BECOME A SUPER-EXPERT",
+      "description": "Lead product creation and development of projects from idea to market."
+    },
+    {
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/signup/signup-feature-1.png",
+      "title": "SUPPORT NEW TALENTS",
+      "description": "Inspire, get involved, and provide help in making creator's 'dream product' comes true."
+    }
+  ],
+  "investor": [
+    {
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/signup/signup-feature-3.png",
+      "title": "EARN HIGH RETURN",
+      "description": "Invest in innovative and exciting products."
+    },
+    {
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/signup/signup-feature-6.png",
+      "title": "SUPPORT INNOVATION",
+      "description": "Become part of creating entirely new products or further developing exsiting products."
+    },
+    {
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/signup/signup-feature-5.png",
+      "title": "BECOME A JUDGE",
+      "description": "Share your opinion on Hubbers contests and new projects."
+    },
+    {
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/signup/signup-feature-1.png",
+      "title": "SUPPORT NEW TALENTS",
+      "description": "Inspire, get involved, and provide help in making creator's 'dream product' comes true."
+    }
+  ],
+  "creator": [
+    {
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/signup/signup-feature-1.png",
+      "title": "FIND EVERYTHING IN ONE PLACE",
+      "description": "Hubbers assists your product development from idea to market."
+    },
+    {
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/signup/signup-feature-2.png",
+      "title": "HIRE THE EXPERT YOU NEED",
+      "description": "At the Market Place, you can find seasoned experts and investors for all parts of your product development."
+    },
+    {
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/signup/signup-feature-3.png",
+      "title": "EARN MONEY",
+      "description": "With carefully selected experts, you get help to successfully launch your product, or participate in exciting contests, and earn cash prize and royalties."
+    },
+    {
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/signup/signup-feature-4.png",
+      "title": "MAKE YOUR DREAM COME TRUE",
+      "description": "Get the chance to create your idea, bring develop a new product or improve an existing one."
+    },
+    {
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/signup/signup-feature-5.png",
+      "title": "JUDGE OTHER CONTESTANTS",
+      "description": "Gain visibility through offering your expertise in particular projects and share your ideas with creatives and investors."
+    }
+  ],
+  "judge": [
+    {
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/signup/signup-feature-7.png",
+      "title": "EVALUATE INNOVATIVE CONTESTS",
+      "description": "Offer your advice and opinion in creator contests and help to improve the participating products."
+    },
+    {
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/signup/signup-feature-8.png",
+      "title": "GAIN MARKET VISIBILITY",
+      "description": "Build your network, show your expertise and find new work, and investment opportunities."
+    },
+    {
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/signup/signup-feature-9.png",
+      "title": "GET INSIGHTS IN NEW PRODUCTS DEVELOPMENT",
+      "description": "Be the first to experiment with new products on the market and see innovative ideas become reality."
+    },
+    {
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/signup/signup-feature-10.png",
+      "title": "GET PRIORITY INVESTING IN NEW PRODUCTS",
+      "description": "Find high return investment opportunities and get the chance to be part of a team of early adopters."
+    }
+  ],
+  "contestant": [
+    {
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/signup/signup-feature-3.png",
+      "title": "EARN MONEY & WIN PRIZES",
+      "description": "By using your expertise and skills at innovative and exciting projects."
+    },
+    {
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/signup/signup-feature-11.png",
+      "title": "BRING YOUR PRODUCT TO MARKET",
+      "description": "Get the opportunity to manufacture your idea and distribute the ready product on the market."
+    },
+    {
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/signup/signup-feature-12.png",
+      "title": "EARN ROYALTIES",
+      "description": "After any of your products distributed and sold on a market."
+    },
+    {
+      "icon": "https://hubbers-hk.oss-cn-hongkong.aliyuncs.com/assets/signup/signup-feature-13.png",
+      "title": "BECOME A CREATOR",
+      "description": "Get the chance to create your idea, bring develop a new product or improve an existing one."
+    }
+  ]
+}

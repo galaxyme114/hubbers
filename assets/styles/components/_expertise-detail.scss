@@ -1,0 +1,177 @@
+// Expertise detail
+
+.expertise-detail {
+	.expertise-detail__nav {
+		padding: 1.25rem 1rem 1rem;
+		border-bottom: 1px solid $border-grey;
+
+		ul {
+			@include clearfix();
+			list-style: none;
+			padding-left: 0;
+			margin: 0;
+
+			li {
+				float: left;
+
+				a {
+					font-size: 0.875rem;
+					text-transform: uppercase;
+					letter-spacing: 0.1rem;
+					padding: 0.125rem 1rem;
+
+					span {
+						display: inline-block;
+						padding-bottom: 0.125rem;
+						border-bottom: 2px solid transparent;
+						transition: border-color 0.3s;
+					}
+					
+					&:hover, &.active {
+						cursor: pointer;
+
+						span {
+							border-color: $green;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.expertise-detail__content {
+		@include clearfix();
+		background-color: $background-black;
+
+		.expertise-detail__content__overview {
+			float: left;
+			width: 66.66666%;
+			height: 100%;
+
+			> div {
+				padding: 2rem;
+				background-color: #ffffff;
+			}
+
+			.expertise-detail__content__overview__meta {
+				background-color: #ffffff;
+				padding-bottom: 3rem;
+			}
+
+			.expertise-detail__expert {
+				background-color: $background-grey;
+			}
+
+			.expertise-detail__content__overview__name {
+				font-size: 2.125rem;
+				font-weight: normal;
+				margin-bottom: 0.5rem;
+			}
+
+			.expertise-detail__content__overview__rating {
+				@include clearfix();
+
+				.star-rating {
+					float: left;
+					margin-right: 0.5rem;
+				}
+
+				.rating {
+					color: $green;
+				}
+
+				.reviews {
+					color: $text-grey;
+				}
+			}
+
+			.expertise-detail__content__overview__gallery {
+				margin-top: 1rem;
+			}
+
+			.expertise-detail__content__overview__title {
+				font-size: 2rem;
+				letter-spacing: 0.05rem;
+				text-transform: uppercase;
+				margin-bottom: 0.875rem;
+			}
+
+			.expertise-detail__content__overview__content {
+				line-height: 1.5;
+			}
+		}
+
+		.expertise-detail__content__packages {
+			width: 33.33333%;
+			float: right;
+
+			background-color: $background-black;
+			height: 100%;
+		}
+	}
+
+	.expertise-detail__expert {
+		@include clearfix();
+		background-color: $background-grey;
+
+		.expertise-detail__expert__meta {
+			@include span-columns(2.75 of 12);
+			text-align: center;
+
+			.expertise-detail__expert__thumbnail {
+				margin-bottom: 0.5rem;
+			}
+
+			.expertise-detail__expert__rating {
+				margin-bottom: 0.75rem;
+
+				.rating, .reviews {
+					font-size: 0.875rem;
+				}
+
+				.rating {
+					color: $green;
+				}
+
+				.reviews {
+					color: $text-grey;
+				}
+			}
+
+			.expertise-detail__expert__contact {
+				font-size: 0.875rem;
+				padding: 0.5rem 0.75rem;
+				border-radius: 4px;
+			}
+		}
+
+		.expertise-detail__expert__info {
+			@include span-columns(9.25 of 12);
+			padding-left: 1rem;
+
+			.expertise-detail__expert__name {
+				font-size: 2rem;
+				font-weight: normal;
+				margin-bottom: 0.25rem;
+			}
+
+			.expertise-detail__expert__caption {
+				font-size: 1.125rem;
+			}
+		}
+
+		.expert-detail__expert__bio {
+			margin-top: 0.5rem;
+
+			.ellipsis {
+				font-size: 0.875rem;
+				display: block;
+				margin-top: 0.25rem;
+
+				a {
+					color: $green;
+				}
+			}
+		}
+	}
+}

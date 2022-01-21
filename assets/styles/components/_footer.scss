@@ -1,0 +1,137 @@
+// Footer
+
+.footer__wrap {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.footer {
+	@include clearfix;
+	padding: 3rem 0;
+	background-color: #333333;
+	color: #ffffff;
+
+	.footer__list__wrap {
+		@include respond-to($desktop) {
+			padding: 0 0 0 3rem;
+		}
+	}
+
+	.footer__list {
+		padding: 0 2rem;
+		margin-bottom: 2rem;
+
+		@include respond-to($desktop) {
+			padding: 0;
+			margin-bottom: 0;
+
+			@include span-columns(3 of 12);
+		}
+
+		.footer__list__title {
+			font-size: 0.875rem;
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 0.05rem;
+			margin-top: 1rem;
+			margin-bottom: 0.875rem;
+		}
+
+		ul {
+			font-size: 0.875rem;
+			line-height: 1.5;
+
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			a {
+				color: #E5E5E5;
+				transition: all 0.3s;
+
+				&:hover {
+					color: $green;
+				}
+			}
+		}
+	}
+}
+
+
+.footer-copyright {
+	@include clearfix;
+	background-color: $background-black;
+	padding: 2rem 0;
+
+	@include respond-to($desktop) {
+		padding: 1rem 2rem;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		color: #828282;
+		transition: all 0.3s;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	.footer-copyright__logo {
+		@include clearfix;
+		text-align: center;
+		margin-bottom: 1rem;
+
+		@include respond-to($desktop) {
+			@include span-columns(8 of 12);
+			text-align: left;
+			margin-bottom: 0;
+		}
+
+		img {
+			max-height: 2.75rem;
+			margin-right: 2rem;
+			padding: 0.35rem 0;
+
+			@include respond-to($desktop) {
+				float: left;
+			}
+		}
+
+		.footer-copyright__copy {
+			font-size: 0.875rem;
+			line-height: 2.75rem;
+			color: #828282;
+
+			@include respond-to($desktop) {
+				float: left;
+			}
+		}
+	}
+
+	.footer-copyright__social {
+		@include clearfix;
+		padding: 0 2rem;
+		text-align: center;
+
+		@include respond-to($desktop) {
+			@include span-columns(4 of 12);
+			padding-right: 4rem;
+			text-align: right;
+			float: right;
+		}
+
+		font-size: 1.75rem;
+		line-height: 2.75rem;
+
+		a {
+			margin: 0 0.5rem;
+		}
+	}
+}

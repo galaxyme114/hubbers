@@ -1,0 +1,22 @@
+.page-not-found {
+	padding-top: 4rem;
+	text-align: center;
+
+	.not-found__title {
+		font-size: 6rem;
+		font-weight: bold;
+		color: $green;
+		margin-bottom: 1rem;
+	}
+
+	.not-found__subtitle {
+		font-size: 1.25rem;
+		color: #5d5f62;
+		line-height: 1.5;
+	}
+
+	.not-found__graphic {
+		max-width: 600px;
+		margin: 4rem auto;
+	}
+}

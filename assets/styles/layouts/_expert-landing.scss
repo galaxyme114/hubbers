@@ -1,0 +1,27 @@
+.page-expert-landing {
+
+	.creative-hub {
+		background-color: $white;
+		color: $black;
+
+		.creative-hub__item {
+			@include respond-to($desktop) {
+				@include span-columns(4 of 12);
+			}
+
+			.creative-hub__item__image {
+				background-color: $background-grey;
+			}
+
+			.creative-hub__item__caption {
+				color: $black;
+			}
+		}
+	}
+
+	#expert-steps {
+		background-color: #000;
+		color: $white;
+	}
+
+}

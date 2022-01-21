@@ -1,0 +1,519 @@
+.business_needs_public_user_content_wrapper {
+	.business_needs_public_user_content {
+		max-width: 1480px;
+		width: 100%;
+		margin: 50px auto;
+		display: flex;
+
+		.business_needs_public_user_content_left {
+			width: 68%;
+			margin-right: 2%;
+			display: flex;
+			box-shadow: 0 0 16px 0 rgba(0, 0, 0, .1);
+			border-radius: 6px;
+			overflow: hidden;
+
+			.business_needs_public_user_content_left_left {
+				width: 70%;
+				background-color: #fff;
+				padding: 3%;
+
+				.job_title {
+					color: #262626;
+					margin: 0;
+				}
+
+				.job_posted_date {
+					color: #808080;
+					margin: 15px 0;
+				}
+
+				.job_posted_category {
+					background-color: #8dc53e;
+					border-radius: 4px;
+					color: #fff;
+					display: inline-block;
+					padding: 5px 15px;
+					border: none;
+
+					&:not(:nth-of-type(1)) {
+						margin-left: 10px;
+					}
+				}
+
+				.divider {
+					height: 1px;
+					margin: 3% 0;
+					background-color: #e6e6e6;
+				}
+
+				.job_info_box_wrapper {
+					display: flex;
+
+					.job_info_box {
+						width: 25%;
+
+						p {
+							margin: 0;
+							color: #434343;
+
+							&:first-of-type {
+								margin-bottom: 5px;
+							}
+
+							b {
+								&.project_ongoing {
+									color: #8dc53e;
+									font-size: 18px;
+								}
+							}
+						}
+					}
+				}
+
+				.job_info {
+					height: 150px;
+					overflow: hidden;
+					margin-bottom: 15px;
+
+					&.expand {
+						height: auto;
+					}
+
+					p {
+						color: #434343;
+						margin-top: 0;
+
+						&:last-child {
+							margin-bottom: 0;
+						}
+					}
+				}
+
+				.read_more_btn {
+					color: #8dc53e;
+					background: transparent;
+					border: none;
+
+					&:hover {
+						cursor: pointer;
+						text-decoration: underline;
+					}
+				}
+
+				.job_skills_experience {
+					font-weight: 600;
+					color: #434343;
+				}
+
+				.skills_list {
+					padding: 0;
+					margin: 2% 0;
+
+					li {
+						list-style-type: none;
+						display: inline-block;
+						color: #8dc53e;
+
+						&:not(:last-child) {
+							margin-right: 20px;
+						}
+					}
+				}
+			}
+
+			.business_needs_public_user_content_left_right {
+				width: 30%;
+				background-color: #f9f9f9;
+
+				.business_needs_public_user_content_left_right_head {
+					padding: 8%;
+					border-bottom: 1px solid #e6e6e6;
+					font-size: 21px;
+					color: #262626;
+				}
+
+				.business_needs_public_user_content_left_right_body {
+					padding: 8%;
+
+					ul {
+						margin: 0;
+						padding: 0;
+						margin-bottom: 10%;
+						display: flex;
+						flex-wrap: wrap;
+
+						li {
+							list-style: none;
+							color: #434343;
+							width: calc(100% - 150px);
+							margin-bottom: 15px;
+
+							&:nth-child(even) {
+								padding-left: 10px;
+							}
+
+							&:nth-child(odd) {
+								width: 150px;
+							}
+						}
+
+						&:first-of-type {
+							li {
+								font-size: 21px;
+								font-weight: 600;
+
+								&:first-child {
+									span {
+										margin-left: 10px;
+									}
+								}
+							}
+						}
+					}
+
+					.bid_button {
+						background: #8dc53e;
+						color: #fff;
+						border-radius: 4px;
+						box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+						border: 1px solid #8dc53e;
+						width: 100%;
+						display: block;
+						text-align: center;
+						padding: 10px 15px;
+						margin-bottom: 10%;
+						transition: all 0.2s ease-in;
+
+						&:hover {
+							cursor: pointer;
+							box-shadow: 0 0 20px 0 rgba(0, 0, 0, .16);
+							background: transparent;
+							color: #8dc53e;
+						}
+					}
+
+					.save_share_btns {
+						display: flex;
+						justify-content: space-between;
+						align-content: center;
+
+						button {
+							width: 48%;
+							background: #fff;
+							color: #808080;
+							border-radius: 4px;
+							border: 1px solid #e7e7e7;
+							padding: 10px;
+							transition: all 0.2s ease-in;
+
+							&:hover {
+								cursor: pointer;
+								box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.10);
+							}
+
+							img {
+								display: inline-block;
+								vertical-align: middle;
+								margin-right: 10px;
+								width: 16px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.business_needs_public_user_content_right {
+			width: 30%;
+			box-shadow: 0 0 16px 0 rgba(0, 0, 0, .1);
+			background-color: #fff;
+			border-radius: 6px;
+
+			.business_needs_public_user_content_right_head {
+				padding: 5.4%;
+				border-bottom: 1px solid #e6e6e6;
+				font-size: 21px;
+				color: #262626;
+			}
+
+			.business_needs_public_user_content_right_body {
+				padding: 5%;
+
+				.business_needs_public_user_content_right_body_top {
+					text-align: center;
+
+					.employee_img {
+						width: 150px;
+						height: 150px;
+						border-radius: 50%;
+						margin: 0 auto 15px;
+					}
+
+					.employee_name {
+						color: #262626;
+						margin-top: 0;
+					}
+
+					.employee_company {
+						color: #434343;
+						margin: 0;
+					}
+				}
+
+				.business_needs_public_user_content_right_body_bottom {
+					margin-top: 10%;
+
+					ul {
+						margin: 0 0 10%;
+						padding: 0;
+						display: flex;
+						flex-wrap: wrap;
+
+						li {
+							list-style: none;
+							width: 125px;
+							margin-bottom: 15px;
+
+							&:nth-child(odd) {
+								width: calc(100% - 125px);
+
+								img {
+									width: 16px;
+									display: inline-block;
+									vertical-align: middle;
+									margin-right: 10px;
+								}
+							}
+
+							&:nth-child(even) {
+								font-weight: 600;
+							}
+						}
+					}
+
+					.send_button {
+						border: 1px solid #8dc53e;
+						color: #8dc53e;
+						background-color: #fff;
+						padding: 20px;
+						font-weight: 600;
+						font-size: 21px;
+						display: block;
+						border-radius: 4px;
+						text-align: center;
+						width: 100%;
+						transition: all 0.2s ease-in;
+
+						&:hover {
+							cursor: pointer;
+							color: #fff;
+							background-color: #8dc53e;
+							box-shadow: 0 0 15px 0 rgba(0, 0, 0, .16);
+						}
+					}
+				}
+			}
+		}
+
+		@media (max-width: 1600px) {
+			max-width: 1280px;
+
+			.business_needs_public_user_content_left {
+				width: 70%;
+
+				.business_needs_public_user_content_left_left {
+					width: 65%;
+				}
+
+				.business_needs_public_user_content_left_right {
+					width: 35%;
+
+					.business_needs_public_user_content_left_right_head {
+						padding: 6.2%;
+					}
+
+					.business_needs_public_user_content_left_right_body {
+						ul {
+							&:first-of-type {
+								li {
+									font-size: 18px;
+									margin-bottom: 10px;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.business_needs_public_user_content_right {
+				width: 28%;
+			}
+		}
+
+		@media (max-width: 1340px) {
+			max-width: 100%;
+			padding: 0 15px;
+
+			.business_needs_public_user_content_left {
+				width: 73%;
+
+				.business_needs_public_user_content_left_left {
+					padding: 2%;
+
+					.job_title {
+						font-size: 18px;
+					}
+
+					.job_posted_date {
+						font-size: 12px;
+						margin: 8px 0;
+					}
+
+					.job_posted_category {
+						font-size: 12px;
+					}
+
+					.job_info_box_wrapper {
+						.job_info_box {
+							font-size: 14px;
+
+							p {
+								b {
+									&.project_ongoing {
+										font-size: 16px;
+									}
+								}
+							}
+						}
+					}
+
+					.job_info {
+						font-size: 14px;
+					}
+
+					.skills_list {
+						font-size: 14px;
+
+						li {
+							margin-right: 12px;
+						}
+					}
+				}
+
+				.business_needs_public_user_content_left_right {
+					.business_needs_public_user_content_left_right_head {
+						font-size: 18px;
+						padding: 6.3%;
+					}
+
+					.business_needs_public_user_content_left_right_body {
+						padding: 6%;
+
+						ul {
+							li {
+								margin-bottom: 10px;
+								font-size: 14px;
+							}
+
+							&:first-of-type {
+								li {
+									font-size: 16px;
+								}
+							}
+
+						}
+					}
+				}
+
+			}
+
+			.business_needs_public_user_content_right {
+				width: 25%;
+
+				.business_needs_public_user_content_right_head {
+					font-size: 18px;
+				}
+
+				.business_needs_public_user_content_right_body {
+					.business_needs_public_user_content_right_body_top {
+						.employee_img {
+							width: 100px;
+							height: 100px;
+						}
+					}
+
+					.business_needs_public_user_content_right_body_bottom {
+						ul {
+							li {
+								font-size: 14px;
+								width: 100px;
+
+								&:nth-child(odd) {
+									width: calc(100% - 100px);
+
+									img {
+										width: 12px;
+										margin-right: 5px;
+									}
+								}
+							}
+						}
+
+						.send_button {
+							padding: 10px;
+							font-size: 16px;
+						}
+					}
+				}
+			}
+		}
+
+		@media (max-width: 1199px) {
+			display: block;
+			padding: 15px;
+			margin: 15px auto;
+
+			.business_needs_public_user_content_left {
+				width: 100%;
+				margin-right: 0;
+				margin-bottom: 30px;
+			}
+
+			.business_needs_public_user_content_right {
+				width: 100%;
+				margin-bottom: 30px;
+
+				.business_needs_public_user_content_right_head {
+					padding: 2%;
+				}
+
+				.business_needs_public_user_content_right_body {
+					padding: 2%;
+
+					.business_needs_public_user_content_right_body_top {}
+
+					.business_needs_public_user_content_right_body_bottom {
+						margin-top: 3%;
+
+						ul {
+							margin-bottom: 3%;
+						}
+					}
+				}
+			}
+		}
+
+		@media (max-width: 991px) {
+			.business_needs_public_user_content_left {
+				.business_needs_public_user_content_left_left {
+					width: 65%;
+				}
+
+				.business_needs_public_user_content_left_right {
+					width: 35%;
+				}
+			}
+		}
+	}
+}

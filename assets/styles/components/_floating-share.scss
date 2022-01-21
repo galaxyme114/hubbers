@@ -1,0 +1,62 @@
+.floating-share__wrap {
+	position: relative;
+}
+
+.floating-share {
+	@include clearfix;
+	position: absolute;
+	top: -0.625rem;
+	left: 0;
+	background: #fff;
+	border-radius: 5rem;
+	width: 7.125rem;
+	padding: 0.275rem 0.275rem;
+
+	opacity: 0;
+	visibility: hidden;
+	transform: translate(0, -50%);
+
+	transition: all 0.3s;
+	-webkit-backface-visibility: hidden;
+
+	&.floating-share--open {
+		opacity: 1;
+		visibility: visible;
+		transform: translate(0, -100%);
+	}
+
+	> div {
+		padding: 0.275rem;
+		float: left;
+		background: $red;
+		border-radius: 5rem;
+		margin-right: 0.375rem;
+		outline: none;
+		color: #fff;
+
+		&.SocialMediaShareButton--facebook {
+			background-color: #3b5998;
+		}
+
+		&.SocialMediaShareButton--twitter {
+			background-color: #1da1f2;
+		}
+
+		&.SocialMediaShareButton--linkedin {
+			background-color: #0077b5;
+
+			.icon {
+				left: 0.05rem;
+			}
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		.icon {
+			font-size: 1.275rem;
+			opacity: 1 !important;
+		}
+	}
+}

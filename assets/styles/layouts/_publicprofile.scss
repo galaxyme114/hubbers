@@ -1,0 +1,356 @@
+.page-public-profile {
+	.public_profile{
+		.container{
+			background-color: #f7f7f7;
+			@include respond-to($small-mobile) {
+				.public_profile_row{
+					display: block !important;
+					.public_profile_sidebar{
+						width: 100% !important;
+						float: unset !important;
+					}
+					.public_profile_main_content{
+						width: 100% !important;
+						float: unset !important;
+						.profile-contest-list__items{
+							padding: 0rem !important;
+						}
+					}
+				}
+			}
+			@include respond-to($mobile) {
+				.public_profile_row{
+					display: block !important;
+					.public_profile_sidebar{
+						width: 100% !important;
+						float: unset !important;
+					}
+					.public_profile_main_content{
+						width: 100% !important;
+						float: unset !important;
+						.profile-contest-list__items{
+							padding: 0rem !important;
+						}
+					}
+				}
+			}
+			@include respond-to($mobile-only) {
+				.public_profile_row{
+					display: block !important;
+					.public_profile_sidebar{
+						width: 100% !important;
+						float: unset !important;
+					}
+					.public_profile_main_content{
+						width: 100% !important;
+						float: unset !important;
+						.profile-contest-list__items{
+							padding: 0rem !important;
+						}
+					}
+				}
+			}
+			.public_profile_row{
+				display: flex;
+				width: 100%;
+				margin-top: 2rem;
+				margin-bottom: 2rem;
+				.public_profile_sidebar{
+					width: 30%;
+					float: left;
+					.public_profile_sidebar_topsection{
+						background-color: $black;
+						.sidebar_topsection_inner{
+							padding: 2rem 2rem;
+							.thumbnail__image{
+								width: 8.125rem;
+								height: 8.125rem;
+								border-radius: 6.25rem;
+								border: 0.25rem solid #4d4d4d;
+								margin: auto;
+								background-size: cover;
+								background-position: center;
+								background-repeat: no-repeat;
+							}
+							.sidebar_user_name{
+								font-size: 2.25rem;
+								color: $white;
+								text-align: center;
+								padding-top: 0.625rem;
+							}
+							.sidebar_user_address{
+								font-size: 0.938rem;
+								color: $white;
+								text-align: center;
+								padding-top: 0.313rem;
+							}
+							.sidebar_user_follows{
+								text-align: center;
+								padding-top: 1.563rem;
+								@include respond-to($tablet) {
+									.user_follow{
+										display: block;
+									}
+									.user_follow_seperater{
+										display: none;
+									}
+									.user_following{
+										display: block;
+										margin-top: 10px;
+									}
+								}
+								.user_follow{
+									color: #6b6b6b;
+									text-transform: uppercase;
+									font-size: 0.938rem;
+									.user_follow_count{
+										color: $green;
+										padding-left: 0.625rem;
+									}
+								}
+								.user_follow_seperater{
+									color: #6b6b6b;
+									padding-left: 1.25rem;
+									padding-right: 1.25rem;
+								}
+								.user_following{
+									color: #6b6b6b;
+									text-transform: uppercase;
+									font-size: 0.938rem;
+									.user_following_count{
+										color: $green;
+										padding-left: 0.625rem;
+									}
+								}
+							}
+							.followbtn{
+								width: 70%;
+								margin: auto;
+								padding-top: 1.563rem;
+								button{
+									font-size: 1.125rem;
+									width: 100%;
+								}
+							}
+							.user_interested{
+								margin-top: 2.5rem;
+								color: $white;
+
+								label{
+									text-transform: uppercase;
+									font-size: 0.938rem;
+									color: #6b6b6b;
+									margin-bottom: 1;
+								}
+							}
+						}
+					}
+					.public_profile_sidebar_middle-section{
+						background-color: $green;
+						padding: 2rem;
+						.middle-section__inner_heading{
+							text-transform: uppercase;
+							font-size: 0.938rem;
+							color: $white;
+							margin-bottom: 0.938rem;
+							letter-spacing: 0.063rem;
+						}
+						.sidebar_middle-section__inner_row{
+							width: 100%;
+							display: flex;
+							margin-top: 0.313rem;
+							.middle-section__inner_left{
+								width: 70%;
+								float: left;
+								> div{
+									color: $white;
+								}
+							}
+							.middle-section__inner_right{
+								width: 30%;
+								float: left;
+								> div{
+									color: $white;
+								}
+							}
+						}
+					}
+					.public_profile_sidebar_bottom-section{
+						background-color: $white;
+						padding: 2rem;
+						.bottom-section__inner_heading{
+							text-transform: uppercase;
+							font-size: 0.938rem;
+							letter-spacing: 0.063rem;
+						}
+						.bottom-section__inner_content{
+							margin-top: 1.25rem;
+							label{
+								color: #424242;
+							}
+							p{
+								margin: 0rem;
+								color: #838383;
+								padding-top: 0.313rem;
+							}
+						}
+					}
+				}
+				.public_profile_main_content{
+					width: 70%;
+					float: left;
+					padding: 0.5rem 2rem;
+					.profile_main_content__project_title{
+						padding: 0;
+						font-size: 0.938rem; 
+						text-transform: uppercase;
+					}
+					.profile_main_content__contents_title{
+						padding: 0;
+						font-size: 0.938rem; 
+						text-transform: uppercase;
+					}
+					.profile-contest-list__items {
+						margin-top: 1.5rem;
+						padding: 0 1rem;
+				
+						@include respond-to($desktop) {
+							padding: 0;
+						}
+						.profile-contest-tile__wrap {
+							@include respond-to($desktop) {
+								@include span-columns(6 of 12);
+								@include omega(2n);
+							}
+						}
+						
+						.profile-contest-tile {
+							@include clearfix();
+							position: relative;
+							border-radius: 0.25rem;
+							margin-bottom: 2rem;
+						
+							&:before {
+								content: '';
+								position: absolute;
+								top: 0;
+								left: 0;
+								right: 0;
+								bottom: 0;
+								box-shadow: 0 0 10px rgba(#000, 0.15);
+								opacity: 0;
+						
+								transition: all 0.3s;
+							}
+						
+							&:hover {
+								cursor: pointer;
+						
+								&:before {
+									opacity: 1;
+								}
+							}
+						
+							.profile-contest-tile__image {
+								position: relative;
+								padding-top: 56.25%;
+								background: $border-grey center;
+								background-size: cover;
+							}
+						
+							.profile-contest-tile__details {
+								position: absolute;
+								bottom: 0;
+								left: 0;
+								right: 0;
+								padding: 1rem;
+						
+								color: #fff;
+								background-color: rgba(#000, 0.75);
+						
+								.profile-contest-tile__stats {
+									@include clearfix;
+									font-size: 0.75rem;
+									float: left;
+									list-style: none;
+									margin: 0rem;
+									padding: 0rem;
+
+									li{
+										display: inline-block;
+										padding-left: 0.313rem;
+										padding-right: 0.313rem;
+										a{
+											color: $white;
+											.icon{
+												font-size: 0.938rem;
+											}
+										}
+									}
+								}
+							}
+						
+							.profile-contest-tile__name {
+								font-size: 1.125rem;
+								margin-bottom: 0.25rem;
+								color: $text-black;
+							}
+						
+							.profile-contest-tile__date {
+								font-size: 0.563rem;
+								color: $text-black;
+							}
+						
+							.profile-contest-tile__info {
+								position: relative;
+								background-color: #ffffff;
+								border: 0.063rem solid $border-grey;
+								border-top: 0;
+								padding: 1rem;
+								line-height: 1.5rem;
+						
+								.profile-contest-tile__info__meta {
+									// padding-right: 8rem;
+								}
+						
+						
+								.profile-contest-tile__info__title {
+									font-size: 0.563rem;
+									margin-top: 0.5rem;
+									color: $green;
+								}
+						
+								.profile-contest-tile__info__indicator {
+									width: 1.5rem;
+									height: 1.5rem;
+									float: left;
+									margin-right: 0.5rem;
+									background-color: $light-grey;
+									border-radius: 50%;
+						
+									&.pending {
+										background-color: $orange;
+									}
+								}
+						
+								.profile-contest-tile__info__step {
+									strong {
+										color: $black;
+									}
+						
+									color: $text-grey;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
+.is-iframe .public_profile_row {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}

@@ -1,0 +1,18 @@
+.linkedin-login-placeholder {
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+	text-align: center;
+
+	.linkedin-login-placeholder__title {
+		font-size: 3rem;
+		font-weight: bold;
+		color: $green;
+		margin-bottom: 1rem;
+	}
+
+	.linkedin-login-placeholder__subtitle {
+		font-size: 1.25rem;
+		color: #5d5f62;
+		line-height: 1.5;
+	}
+}

@@ -1,0 +1,56 @@
+.desk-section--project-detail {
+
+}
+
+.project-details-step {
+	.project-details-step__fields__wrap {
+		position: relative;
+		@include clearfix();
+	}
+
+	.project-details-step__fields {
+		@include span-columns(8 of 12);
+	}
+
+	.project-details-step__attachments {
+		@include span-columns(4 of 12);
+
+		> div {
+			padding-left: 2rem;
+		}
+
+		&:before {
+			content: ' ';
+			position: absolute;
+			top: -2rem;
+			bottom: -2rem;
+
+			width: 1px;
+			background-color: $border-grey;
+		}
+	}
+
+	.project-details-step__submit {
+		@include clearfix();
+		text-align: right;
+
+		.project-details-step__submit__progress {
+			font-weight: bold;
+			color: $orange;
+			padding: 0.575rem 0;
+			float: left;
+
+			.icon {
+				font-size: 1.25rem;
+				line-height: 1;
+				position: relative;
+				top: 0.1rem;
+				margin-right: 0.5rem;
+			}
+		}
+
+		button {
+			float: right;
+		}
+	}
+}

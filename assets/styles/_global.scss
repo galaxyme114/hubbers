@@ -1,0 +1,357 @@
+// Global app styles
+$mq-sm: 768px;
+$mq-md: 992px;
+$mq-lg: 1200px;
+
+$breakpoints: $mq-sm,
+$mq-md,
+$mq-lg;
+
+$neat-grid: (columns: 12,
+gutter: 30px);
+@font-face {
+	font-family: 'Avenir-Black';
+	src: url('../fonts/Avenir-Black.ttf') format('truetype'),
+}
+@font-face {
+	font-family: 'Avenir-Medium';
+	src: url('../fonts/Avenir-Medium.ttf') format('truetype'),
+}
+@font-face {
+	font-family: 'Avenir-Roman';
+	src: url('../fonts/Avenir-Roman.ttf') format('truetype'),
+}
+@font-face {
+	font-family: 'Avenir-Heavy';
+	src: url('../fonts/Avenir-Heavy.ttf') format('truetype'),
+}
+
+html {
+  font-size: 13px;
+  @include respond-to($tablet) {
+    font-size: 14px;
+  }
+
+  @include respond-to($desktop) {
+    font-size: 16px;
+  }
+}
+
+body {
+  font-family: 'Lato',sans-serif;
+  color: $text-black;
+  margin: 0;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  height: 100%;
+  background: $theme-background;
+}
+
+#root>div {
+  min-height: 100%;
+}
+
+input,
+textarea {
+  font-family: 'Lato', 'sans-serif';
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+::-webkit-input-placeholder {
+  font-family: 'Lato', 'sans-serif';
+}
+
+:-moz-placeholder {
+  font-family: 'Lato', 'sans-serif';
+}
+
+::-moz-placeholder {
+  font-family: 'Lato', 'sans-serif';
+}
+
+:-ms-input-placeholder {
+  font-family: 'Lato', 'sans-serif';
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+button {
+
+  &,
+  &:focus {
+    outline: none;
+  }
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  @include outer-container();
+}
+
+.main-content {
+  //@include border-color();
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: $green;
+
+  .icon {
+    position: relative;
+    top: 2px;
+  }
+}
+
+.rrui__input {
+  input {
+    background-color: #fff;
+    border: 0;
+    color: $text-black;
+  }
+}
+
+// Helper classes
+
+.hide {
+  display: none !important;
+}
+
+.pull-right {
+  float: right;
+}
+
+.error-message {
+  color: $red;
+}
+
+.info-message {
+  color: $orange;
+}
+
+.success-message {
+  color: $green;
+}
+
+.page-loading {
+  display: table;
+  width: 100%;
+  height: 200px;
+
+  >div {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .sk-spinner {
+    color: $green;
+    margin-top: 1.5rem;
+    margin-left: -0.875rem;
+  }
+
+  &.page-loading-sm {
+    height: auto;
+  }
+}
+
+.slick-arrow {
+  width: 32px;
+  height: 32px;
+
+  &:before {
+    font-size: 32px;
+    color: $green;
+    @extend .icomoon;
+  }
+
+  &.slick-prev {
+    @include respond-to($desktop) {
+      left: -32px;
+    }
+
+    @extend .icon-chevron-left;
+  }
+
+  &.slick-next {
+    @include respond-to($desktop) {
+      right: -32px;
+    }
+
+    @extend .icon-chevron-right;
+  }
+}
+
+.page-heading {
+  padding: 3rem 2rem;
+
+  @include respond-to($desktop) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .page-heading__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 0 0 1rem;
+    text-align: center;
+
+    @include respond-to($desktop) {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .page-heading__caption {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.dropzone-placeholder {
+  padding: 1rem 0;
+  text-align: center;
+  color: $text-grey;
+
+  .icon {
+    font-size: 2rem;
+    color: $green;
+  }
+}
+
+// RC Slider
+
+.rc-slider-track {
+  background-color: lighten($green, 10%);
+}
+
+.rc-slider-handle {
+  border-color: lighten($green, 10%);
+
+  &:hover {
+    border-color: $green;
+  }
+}
+
+// Range
+.price-range {
+  display: flex;
+
+  .price-range__label {
+    font-size: 1.125rem;
+    display: flex;
+    flex: 0.135;
+    text-align: center;
+    justify-content: center;
+
+    &.first {
+      flex: 0.0875;
+    }
+
+    &.last {
+      flex: 0.15;
+    }
+  }
+
+  .rc-slider {
+    display: flex;
+    flex: 0.9;
+    padding: 0.6rem 0;
+  }
+}
+
+// Custom Styled Checkbox
+
+.custom-styled-checkbox {
+  position: absolute;
+  opacity: 0;
+
+  &+.custom-styled-label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    color: #a0a0a0;
+    font-weight: 200;
+  }
+
+  &+.custom-styled-label:before {
+    content: "";
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 1px solid #8dc73f;
+  }
+
+  &:hover+.custom-styled-label:before {
+    background: #8dc73f;
+  }
+
+  &:focus+.custom-styled-label:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  }
+
+  &:checked+.custom-styled-label:before {
+    background: #8dc73f;
+  }
+
+  &:disabled+.custom-styled-label {
+    color: #b8b8b8;
+    cursor: auto;
+  }
+
+  &:disabled+.custom-styled-label:before {
+    box-shadow: none;
+    background: #ddd;
+  }
+
+  &:checked+.custom-styled-label:after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white,
+      4px -8px 0 white;
+    transform: rotate(45deg);
+  }
+}
+
+.clearfix {
+  &:after {
+    content: ' ';
+    display: block;
+    clear: both;
+  }
+}

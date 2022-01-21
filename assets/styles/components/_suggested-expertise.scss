@@ -1,0 +1,51 @@
+// Suggested Expertise Styles
+
+.suggested-expertise {
+	padding: 0 0 1rem;
+
+	.suggested-expertise__top {
+		@include clearfix();
+	}
+
+	.suggested-expertise__label {
+		float: left;
+
+		color: $text-grey;
+		text-transform: uppercase;
+		letter-spacing: 0.05rem;
+
+		.sk-spinner {
+			display: inline-block;
+			margin-right: 0.5rem;
+			margin-left: 0.5rem;
+			height: 12px;
+			color: $grey;
+
+			> div {
+				width: 12px;
+				height: 12px;
+			}
+		}
+	}
+
+	.suggested-expertise__display-check {
+		float: right;
+		margin-top: -0.3rem;
+
+		input {
+			position: relative;
+			top: 0.2rem;
+		}
+	}
+
+	.suggested-expertise__expertise-list {
+		@include clearfix();
+		margin-top: 0.75rem;
+
+		.expertise {
+			margin: 0;
+			@include span-columns(4 of 12);
+			@include omega(3);
+		}
+	}
+}

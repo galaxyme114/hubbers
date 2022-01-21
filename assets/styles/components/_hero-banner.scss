@@ -1,0 +1,85 @@
+// Styles for the hero banner
+
+.hero-banner {
+	position: relative;
+	height: 25rem;
+	color: #ffffff;
+	background-size: cover;
+	background-color: #333;
+
+	&.add-overlay {
+		&:before {
+			content: ' ';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+
+			background: rgba($black, 0.45);
+		}
+	}
+
+	.container, .hero-banner__inner, .hero-banner__inner > div {
+		width: 100%;
+		height: 100%;
+	}
+
+	.hero-banner__inner {
+		display: table;
+		position: relative;
+		z-index: 10;
+
+		> div {
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+		}
+	}
+
+	.hero-banner__title {
+		font-size: 1.85rem;
+		font-weight: 700;
+
+		@include respond-to($desktop) {
+			font-size: 4rem;
+		}
+
+		small {
+			font-size: 1.75rem;
+			margin-bottom: 1rem;
+			text-transform: uppercase;
+			display: block;
+
+			@include respond-to($desktop) {
+				font-size: 3.25rem;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.hero-banner__caption {
+		font-size: 1.125rem;
+		font-weight: normal;
+		font-style: italic;
+		letter-spacing: 0.05rem;
+		margin-top: 2rem;
+
+		display: none;
+		
+		@include respond-to($desktop) {
+			display: block;
+		}
+	}
+
+	.hero-banner__description {
+		font-size: 1.25rem;
+		line-height: 1.5;
+		max-width: 760px;
+		margin: 1rem auto 0;
+	}
+
+	.hero-banner__cta {
+		margin-top: 2rem;
+	}
+}

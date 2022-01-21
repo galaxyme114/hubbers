@@ -1,0 +1,110 @@
+// Categories progress
+
+.categories-progress__outer {
+	position: relative;
+	background-color: $white;
+
+	@include respond-to($desktop) {
+		padding-top: 180px;
+	}
+}
+
+.categories-progress {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	@include respond-to($mobile) {
+		position: static !important;
+	}
+	@include respond-to($tablet) {
+		position: static !important;
+	}
+
+	.categories-progress__inner {
+		background-color: $white;
+		z-index: 10;
+	}
+
+	&:after {
+		content: ' ';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 5px;
+
+		background-color: #ffffff;
+		box-shadow: 5px 0 12px rgba(0, 0, 0, 0.5);
+		z-index: -1;
+
+		opacity: 0;
+
+		transition: opacity 0.3s;
+	}
+
+	&.sticky {
+		position: fixed;
+		bottom: auto;
+		z-index: 1000;
+
+		&:after {
+			opacity: 1;
+		}
+	}
+
+	.categories {
+		@include clearfix();
+		padding: 0 2rem;
+
+		@include respond-to($desktop) {
+			@include span-columns(8.5 of 12);
+		}
+	}
+
+	.categories-progress__overall {
+		@include clearfix();
+
+		@include respond-to($desktop) {
+			@include span-columns(3.5 of 12);
+		}
+
+		padding: 1.125rem 2rem;
+
+		border: 1px solid $border-grey;
+		border-top: 0;
+		border-bottom: 0;
+
+		transition: border-color 0.3s;
+
+		.categories-progress__overall__inner {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			.categories-progress__overall__inner__actions {
+				text-align: right;
+
+				> button {
+					margin: 0.125rem 0;
+
+					&:last-child {
+						color: $orange;
+					}
+				}
+			}
+		}
+
+		.categories-progress__overall__indicator {
+			font-size: 0.8rem;
+			letter-spacing: 0.05rem;
+			text-transform: uppercase;
+			text-align: center;
+
+			display: block;
+			margin-top: 1.25rem;
+		}
+	}
+}

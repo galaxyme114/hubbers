@@ -1,0 +1,25 @@
+<svg width="150" height="150" xmlns="http://www.w3.org/2000/svg">
+	<!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+	<g>
+		<title>background</title>
+		<rect fill="none" id="canvas_background" height="152" width="152" y="-1" x="-1"/>
+	</g>
+	<g>
+		<title>Layer 1</title>
+		<g id="svg_1">
+			<path id="svg_1" d="m127.665985,51.875c1.104004,0 2,0.895996 2,2l0,63.333008c0,1.104004 -0.895996,2 -2,2l-103.665985,0c-1.104004,0 -2,-0.895996 -2,-2l0,-63.333008c0,-1.104004 0.895996,-2 2,-2l103.665985,0m0,-3l-103.665985,0c-2.756989,0 -5,2.243011 -5,5l0,63.333008c0,2.756989 2.243011,5 5,5l103.665985,0c2.756989,0 5,-2.243011 5,-5l0,-63.333008c0,-2.757019 -2.243011,-5 -5,-5l0,0z" fill="#76AC2C"/>
+		</g>
+		<path id="svg_3" d="m126.332977,110.494995c0,1.130005 -0.895996,2.046997 -2,2.046997l-95.666992,0c-1.104004,0 -2,-0.916992 -2,-2.046997l0,-53.239014c0,-1.129974 0.895996,-2.046997 2,-2.046997l95.666992,0c1.104004,0 2,0.917023 2,2.046997l0,53.239014z" fill="#76AC2C"/>
+		<path id="svg_4" d="m131.332977,136.208984c0,1.104004 -0.895996,2 -2,2l-106.666992,0c-1.104004,0 -2,-0.895996 -2,-2l0,-7.333008c0,-1.10498 0.895996,-2 2,-2l106.666992,0c1.104004,0 2,0.89502 2,2l0,7.333008z" stroke-miterlimit="10" stroke-width="3" stroke="#76AC2C" fill="none"/>
+		<path id="svg_5" d="m86.336975,56.208984c0,0 -3.25,-17.75 16.75,-15.25" stroke-miterlimit="10" stroke-width="3" stroke="#76AC2C" fill="none"/>
+		<path id="svg_6" d="m80.165985,56.208984c0,0 0,-3.833008 0,-9.333008c0.75,-3 -2.354004,-3.5 14.447998,-21.75" stroke-miterlimit="10" stroke-width="3" stroke="#76AC2C" fill="none"/>
+		<line id="svg_7" y2="16.624985" x2="74.665985" y1="56.208985" x1="74.665985" stroke-miterlimit="10" stroke-width="3" stroke="#76AC2C" fill="none"/>
+		<path id="svg_8" d="m62.815979,56.258972c0,0 3.25,-17.75 -16.75,-15.25" stroke-miterlimit="10" stroke-width="3" stroke="#76AC2C" fill="none"/>
+		<path id="svg_9" d="m68.987,56.258972c0,0 0,-3.833008 0,-9.333008c-0.75,-3 2.354004,-3.5 -14.447998,-21.75" stroke-miterlimit="10" stroke-width="3" stroke="#76AC2C" fill="none"/>
+		<circle id="svg_10" r="4.563004" cy="41.764985" cx="42.833985" stroke-miterlimit="10" stroke-width="3" stroke="#76AC2C" fill="none"/>
+		<circle id="svg_11" r="4.563004" cy="21.187985" cx="53.027985" stroke-miterlimit="10" stroke-width="3" stroke="#76AC2C" fill="none"/>
+		<circle id="svg_12" r="4.563003" cy="12.062985" cx="74.665985" stroke-miterlimit="10" stroke-width="3" stroke="#76AC2C" fill="none"/>
+		<circle id="svg_13" r="4.563004" cy="21.187985" cx="98.177985" stroke-miterlimit="10" stroke-width="3" stroke="#76AC2C" fill="none"/>
+		<circle id="svg_14" r="4.563004" cy="40.767985" cx="106.422985" stroke-miterlimit="10" stroke-width="3" stroke="#76AC2C" fill="none"/>
+	</g>
+</svg>

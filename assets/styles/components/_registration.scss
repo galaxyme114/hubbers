@@ -1,0 +1,72 @@
+.registration {
+	padding: 1.5rem 2rem;
+
+	.registration__title {
+		font-size: 1.25rem;
+		font-weight: normal;
+		letter-spacing: 0.025rem;
+		text-align: center;
+		text-transform: uppercase;
+
+		margin-bottom: 1rem;
+	}
+
+	.registration__inputs {
+		@include clearfix();
+		margin-bottom: 1rem;
+
+		&.registration__inputs--password {
+			input, .password-input {
+				width: 48%;
+				float: left;
+
+				&:last-child {
+					float: right;
+				}
+			}
+		}
+	}
+
+	.registration__footer {
+		@include clearfix();
+
+		.registration__submit {
+			float: left;
+		}
+
+		.registration__validation {
+			float: right;
+			text-align: right;
+
+			padding: 0.7rem 0;
+		}
+	}
+
+	.registration__disclaimer {
+		font-size: 0.875rem;
+		font-style: italic;
+		margin-bottom: 1rem;
+
+		label {
+			line-height: 1.8;
+		}
+
+		input {
+			float: left;
+			margin-right: 0.5rem;
+		}
+
+		.icon-edit {
+			font-size: 1rem;
+			line-height: 1;
+			position: relative;
+			top: 2px;
+			margin-left: 0.5rem;
+
+			&:hover {
+				cursor: pointer;
+				color: $green;
+			}
+		}
+	}
+}

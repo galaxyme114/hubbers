@@ -1,0 +1,101 @@
+// Button Styles
+
+.btn {
+	font-size: 0.875rem;
+	font-weight: 400;
+	letter-spacing: 0.05rem;
+	text-transform: uppercase;
+	padding: 0.675rem 1.25rem;
+	width: auto;
+	border: 2px solid transparent;
+	color: #fff;
+	background-color: $green;
+	outline: none;
+	transition: all 0.3s;
+
+	border-radius: 4px;
+
+	&:hover {
+		cursor: pointer;
+		background-color: darken($green, 5%);
+	}
+
+	&[disabled] {
+		pointer-events: none;
+		opacity: 0.5;
+
+		background-color: lighten($green, 5%);
+	}
+
+	.icon {
+		position: relative;
+		top: 1px;
+		margin-right: 0.25rem;
+	}
+}
+
+.btn-alt {
+	color: $text-grey;
+	background-color: $border-grey;
+
+	&:hover {
+		background-color: $border-grey;
+	}
+
+	&[disabled] {
+		background-color: $border-grey;
+	}
+}
+
+.btn-large {
+	font-size: 1rem;
+	min-width: 200px;
+	height: 3.625rem;
+}
+
+.btn-small {
+	font-size: 0.875rem;
+	//padding: 0.125rem 0.25rem;
+	padding: 0.3rem 0.5rem;
+	min-width: 0;
+}
+
+.btn-transparent {
+	color: $green;
+
+	&, &:hover, &[disabled] {
+		background-color: transparent;
+	}
+
+	&:hover {
+		border-color: currentColor;
+	}
+}
+
+.btn-outline {
+	color: $green;
+	border: 2px solid $green;
+
+	&, &[disabled] {
+		background-color: transparent;
+	}
+
+	&:hover {
+		color: $white;
+		background-color: $green;
+	}
+}
+
+.btn-rounded {
+	border-radius: 4px;
+}
+
+.btn-danger {
+	border-color: $red;
+	color: $red;
+
+	&:hover {
+		color: $white;
+		background-color: $red;
+	}
+}

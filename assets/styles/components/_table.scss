@@ -1,0 +1,57 @@
+.table {
+	width: 100%;
+	empty-cells: show;
+	border: 1px solid $border-grey;
+	border-collapse: collapse;
+	border-radius: 0.25rem;
+}
+
+.table caption {
+	color: #000;
+	font: italic 85%/1 arial, sans-serif;
+	padding: 1em 0;
+	text-align: center;
+}
+
+.table td, .table th {
+	border-left: 1px solid $border-grey;
+	font-size: inherit;
+	margin: 0;
+	overflow: visible;
+	padding: .875rem 1.25rem;
+}
+
+.table td:first-child, .table th:first-child {
+	border-left-width: 0
+}
+
+.table thead {
+	background-color: $border-grey;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.table td {
+	background-color: transparent
+}
+
+.table-odd td, .table-striped tr:nth-child(2n-1) td {
+	background-color: #f2f2f2
+}
+
+.table-bordered td {
+	border-bottom: 1px solid $border-grey;
+}
+
+.table-bordered tbody > tr:last-child > td {
+	border-bottom-width: 0
+}
+
+.table-horizontal td, .table-horizontal th {
+	border-width: 0 0 1px;
+	border-bottom: 1px solid $border-grey;
+}
+
+.table-horizontal tbody > tr:last-child > td {
+	border-bottom-width: 0
+}

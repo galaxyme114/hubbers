@@ -1,0 +1,1173 @@
+.page-user-profile {
+
+	.profile-metadata {
+		@include clearfix;
+		
+		// border-top: 1px solid #444;
+		@include respond-to($mobile) {
+			padding: 1rem;
+		}
+		@include respond-to($mobile-only) {
+			padding: 1rem;
+		}
+		@include respond-to($tablet) {
+			padding: 1rem;
+		}
+		@include respond-to($desktop) {
+			padding: 4rem 0;
+		}
+		@include respond-to($large-desktop) {
+			padding: 4rem 0;
+		}
+		.profile-metadata__box {
+			@include clearfix;
+			background-color: $white;
+			box-shadow: 0px 1px 10px 2px #ddd;
+			border-radius: 1.25rem;
+			@include respond-to($mobile) {
+				padding: 1rem;
+			}
+			@include respond-to($mobile-only) {
+				padding: 1rem;
+			}
+			@include respond-to($tablet) {
+				padding: 1rem;
+			}
+	
+			@include respond-to($desktop) {
+				padding: 4rem 4rem;
+			}
+			@include respond-to($large-desktop) {
+				padding: 4rem 4rem;
+			}
+			.edit-icon{
+				float: right;
+			}
+			.change-btn-updaate {
+				float: right;
+				button.btn-updaate {
+					background-color: rgb(131, 192, 47);
+					border-radius: 5%;
+					padding: 0.8rem;
+					color: white;
+					border: none;
+				}
+			}
+			&_inner {
+				@include clearfix;
+				.profile-metadata__thumbnail {
+					@include span-columns(2 of 12);
+					@include respond-to($mobile) {
+						@include span-columns(12 of 12);
+						.user-thumbnail{
+							margin: auto;
+							margin-bottom: 2rem;
+						}
+					}
+					@include respond-to($mobile-only) {
+						@include span-columns(12 of 12);
+					}
+					@include respond-to($tablet) {
+						@include span-columns(3 of 12);
+					}
+		
+					.user-thumbnail {
+						width: 10rem;
+						height: 10rem;
+						background-repeat: no-repeat;
+						background-size: contain;
+						.initials {
+							font-size: 4rem;
+							line-height: 2;
+						}
+					}
+					.follow-btn {
+						text-align: center;
+						margin-top: 1.2rem;
+
+						.btn {
+							background: transparent;
+							color: $green;
+							border-color: $green;
+							border-radius: 100px;
+							text-transform: capitalize;
+						}
+					}
+				}
+				.profile-metadata__details {
+					position: relative;
+					padding: 0rem 1rem;
+					@include span-columns(10 of 12);
+					@include respond-to($mobile) {
+						@include span-columns(12 of 12);
+					}
+					@include respond-to($mobile-only) {
+						@include span-columns(12 of 12);
+					}
+					@include respond-to($tablet) {
+						@include span-columns(9 of 12);
+					}
+		
+					.profile-metadata__details__section {
+						// @include span-columns(2 of 4);
+						padding: 0rem 0.875rem 0rem 0.875rem;
+		
+						.profile-metadata__details__section__name {
+							font-size: 3rem;
+							font-family: 'Avenir-Roman';
+							line-height: 2.25rem;
+						}
+						.profile-metadata__details__section__position {
+							font-size: 1.5rem;
+							padding: 0rem 0rem 0.7rem 0rem;
+							font-family: 'Avenir-Black';
+						}
+						.profile-metadata__details__section__location {
+							display: flex;
+							&-location {
+								padding-right: 1.75rem; 
+								.title {
+									font-size: 1.125rem;
+									font-family: 'Avenir-Roman';
+								}
+								.name {
+									font-size: 1.125rem;
+									font-family: 'Avenir-Black';
+								}
+							}
+							&-member {
+								padding-right: 1.75rem;
+								.title {
+									font-size: 1.125rem;
+									font-family: 'Avenir-Roman';
+								}
+								.name {
+									font-size: 1.125rem;
+									font-family: 'Avenir-Black';
+								} 
+							}
+							&-network {
+								padding-right: 1.75rem; 
+								.title {
+									font-size: 1.125rem;
+									font-family: 'Avenir-Roman';
+								}
+								.name {
+									font-size: 1.125rem;
+									font-family: 'Avenir-Black';
+								}
+							}
+						}
+						&__member {
+							font-size: 1.5rem;
+							padding: 2rem 0.875rem 0rem 0.875rem;
+							font-family: 'Avenir-Black';
+						}
+					}
+					.profile-metadata__details__section_name_box {
+						width: 47%;
+						display: inline-table;
+						margin: 2%;
+						margin-left: 0%;
+						margin-top: 0;
+						margin-bottom: 0;
+					}
+				}
+			}
+			&-bio {
+				margin-top: 2rem;
+				.title {
+					font-family: 'Avenir-Heavy';
+					font-size: 1.875rem;
+				}
+				.description {
+					font-family: 'Avenir-Roman';
+					font-size: 1.125rem;
+				}
+			}
+			// .profile-metadata__details__section{
+			// 	.profile-metadata__details__section__name_box {
+			// 		width: 36%;
+			// 		float: left;
+			// 		/* display: -webkit-inline-box; */
+			// 	}
+			// 	.profile-metadata__details__section__lastname_box {
+			// 		width: 36%;
+			// 		float: left;
+			// 		margin-left: 4%;
+			// 	}
+			// 	.profile-metadata__details__section__position_box {
+			// 		width: 36%;
+			// 	}
+			// 	.profile-metadata__details__section__bio_box {
+			// 		width: 36%;
+			// 	}
+			// 	.profile-metadata__thumbnail{
+			// 		.user-thumbnail {
+			// 			position: relative;
+			// 			width: 10.125rem;
+			// 			height: 10.125rem;
+			// 			min-width: 3.125rem;
+			// 			min-height: 3.125rem;
+			// 			border-radius: 50%;
+			// 			background-color: #232323;
+			// 			text-align: center;
+			// 			overflow: hidden;
+			// 		}
+			// 	}
+			// }
+		}
+	}
+
+	.public-profile-activity {
+		background-color: $white;
+		&__row {
+			padding: 4rem 0rem;
+			@include clearfix;
+			&__left {
+				@include respond-to($mobile) {
+					padding: 1rem;
+				}
+				@include respond-to($mobile-only) {
+					padding: 1rem;
+				}
+				@include respond-to($tablet) {
+					padding: 1rem;
+				}
+		
+				@include respond-to($desktop) {
+					@include span-columns(8 of 12);
+				}
+				@include respond-to($large-desktop) {
+					@include span-columns(8 of 12);
+				}
+				&__activity_section {
+					.activity_section_title {
+						font-family: 'Avenir-Black';
+						font-size: 2.25rem;
+					}
+					.all-activities_items {
+						@include respond-to($mobile) {
+							padding: 2rem 1rem;
+						}
+						@include respond-to($mobile-only) {
+							padding: 2rem 1rem;
+						}
+						@include respond-to($tablet) {
+							padding: 2rem 1rem;
+						}
+						@include respond-to($desktop) {
+							padding: 2rem 1rem;
+						}
+						@include respond-to($large-desktop) {
+							padding: 2rem 1rem;
+						}
+						box-shadow: 0px 1px 10px 2px #ddd;
+						border-radius: 1.25rem;
+						margin-top: 1rem;
+						@include clearfix;
+						.all-activities_item {
+							@include span-columns(4 of 12);
+							text-align: center;
+							.title {
+								font-family: 'Avenir-Heavy';
+								font-size: 1.125rem;
+							}
+							.caption {
+								font-family: 'Avenir-Heavy';
+								font-size: 3rem;
+							}
+						}
+					}
+					.profile_section_title {
+						font-family: 'Avenir-Black';
+						font-size: 2.25rem;
+						margin-top: 1.75rem;
+					}
+					.language_items {
+						@include respond-to($mobile) {
+							padding: 2rem 1rem;
+						}
+						@include respond-to($mobile-only) {
+							padding: 2rem 1rem;
+						}
+						@include respond-to($tablet) {
+							padding: 2rem 1rem;
+						}
+						@include respond-to($desktop) {
+							padding: 2rem 1rem;
+						}
+						@include respond-to($large-desktop) {
+							padding: 2rem 1rem;
+						}
+						box-shadow: 0px 1px 10px 2px #ddd;
+						border-radius: 1.25rem;
+						margin-top: 1rem;
+						.language_section_title {
+							font-family: 'Avenir-Heavy';
+							font-size: 1.5rem;
+						}
+						.language_items_item {
+							font-family: 'Avenir-Roman';
+							font-size: 1.125rem;
+							margin-top: 0.75rem;
+							.seprator {
+								position: relative;
+								top: -1px;
+								padding-left: 1rem;
+								padding-right: 1rem;
+							}
+						}
+					}
+					.skills_items {
+						@include respond-to($mobile) {
+							padding: 2rem 1rem;
+						}
+						@include respond-to($mobile-only) {
+							padding: 2rem 1rem;
+						}
+						@include respond-to($tablet) {
+							padding: 2rem 1rem;
+						}
+						@include respond-to($desktop) {
+							padding: 2rem 1rem;
+						}
+						@include respond-to($large-desktop) {
+							padding: 2rem 1rem;
+						}
+						box-shadow: 0px 1px 10px 2px #ddd;
+						border-radius: 1.25rem;
+						margin-top: 1.75rem;
+						.skills_section_title {
+							font-family: 'Avenir-Heavy';
+							font-size: 1.5rem;
+						}
+						.skills_items_item {
+							font-family: 'Avenir-Roman';
+							font-size: 1.125rem;
+							margin-top: 0.75rem;
+							.seprator {
+								position: relative;
+								top: -1px;
+								padding-left: 1rem;
+								padding-right: 1rem;
+							}
+						}
+					}
+					.work-history_items {
+						@include respond-to($mobile) {
+							padding: 2rem 1rem;
+						}
+						@include respond-to($mobile-only) {
+							padding: 2rem 1rem;
+						}
+						@include respond-to($tablet) {
+							padding: 2rem 1rem;
+						}
+						@include respond-to($desktop) {
+							padding: 2rem 1rem;
+						}
+						@include respond-to($large-desktop) {
+							padding: 2rem 1rem;
+						}
+						box-shadow: 0px 1px 10px 2px #ddd;
+						border-radius: 1.25rem;
+						margin-top: 1rem;
+						.work-history_section_title {
+							font-family: 'Avenir-Heavy';
+							font-size: 1.5rem;
+						}
+						.work-history_items_item {
+							position: relative;
+							margin-top: 1.5rem;
+							.item_breafcase_icon {
+								position: absolute;
+							}
+							.work-history__content {
+								padding-left: 6rem;
+								.position {
+									font-family: 'Avenir-Heavy';
+									font-size: 1.125rem;
+								}
+								.company {
+									font-family: 'Avenir-Heavy';
+									font-size: 1.125rem;
+								}
+								.type {
+									font-family: 'Avenir-Roman';
+									font-size: 1.125rem;
+								}
+								.present {
+									font-family: 'Avenir-Heavy';
+									font-size: 1.125rem;
+								}
+								.address {
+									img {
+										padding-right: 0.5rem;
+										position: relative;
+										top: 3px;
+									}
+									font-family: 'Avenir-Roman';
+									font-size: 1.125rem;
+								}
+							}
+						}
+					}
+
+				}
+				&__profile_section {
+					.profile_section_title {
+						font-family: 'Avenir-Black';
+						font-size: 2.25rem;
+					}
+				}
+			}
+			&__right {
+				@include respond-to($mobile) {
+					padding: 1rem;
+				}
+				@include respond-to($mobile-only) {
+					padding: 1rem;
+				}
+				@include respond-to($tablet) {
+					padding: 1rem;
+				}
+		
+				@include respond-to($desktop) {
+					@include span-columns(4 of 12);
+				}
+				@include respond-to($large-desktop) {
+					@include span-columns(4 of 12);
+				}
+				.public-profile-social-media {
+					box-shadow: 0px 1px 10px 2px #ddd;
+					padding: 2rem 2rem;
+					border-radius: 1.25rem;
+					margin-top: 4rem;
+					&__item {
+						margin-top: 1.25rem;
+						margin-bottom: 1.25rem;
+						.name {
+							font-family: 'Avenir-Heavy', 'Avenir-Roman';
+							font-size: 1.125rem;
+							line-height: 1.25rem;
+						}
+						.title {
+							font-family: 'Avenir-Heavy', 'Avenir-Roman';
+							font-size: 1.125rem;
+							line-height: 1.25rem;
+						}
+						.time {
+							font-family: 'Avenir-Roman';
+							font-size: 0.875rem;
+						}
+					}
+				}
+			}
+		}
+	}
+	.public-profile-community {
+		background-color: $theme-background;
+		&__row {
+			padding: 4rem 0rem;
+			@include clearfix;
+			&__left {
+				@include respond-to($mobile) {
+					padding: 1rem;
+				}
+				@include respond-to($mobile-only) {
+					padding: 1rem;
+				}
+				@include respond-to($tablet) {
+					padding: 1rem;
+				}
+		
+				@include respond-to($desktop) {
+					@include span-columns(8 of 12);
+				}
+				@include respond-to($large-desktop) {
+					@include span-columns(8 of 12);
+				}
+				&__community_section {
+					
+					@include respond-to($mobile) {
+						.activity-list__title {
+							padding: 0.625rem;
+							display: inline-block;
+							width: 100%;
+							.arrow-btns {
+								float: right;
+							}
+						}
+					}
+					@include respond-to($mobile-only) {
+						.activity-list__title {
+							padding: 0.625rem;
+							display: inline-block;
+							width: 100%;
+							.arrow-btns {
+								float: right;
+							}
+						}
+					}
+					@include respond-to($tablet) {
+						.activity-list__title {
+							padding: 0.625rem;
+						}
+					}
+			
+					@include respond-to($desktop) {
+						.activity-list__title {
+							padding: 0rem;
+							display: inline-flex;
+						}
+					}
+					@include respond-to($large-desktop) {
+						.activity-list__title {
+							padding: 0rem;
+							display: inline-flex;
+						}
+					}
+					.activity-list__title {
+						font-size: 2.25rem;
+						font-family: 'Avenir-Black';
+						letter-spacing: 0.1rem;
+						text-align: left;
+						margin-bottom: 2rem;
+						.arrow-btns {
+							margin-left: 3.125rem;
+							margin-top: -0.625rem;
+							button {
+								width: 2.5rem;
+								height: 2.5rem;
+								border-radius: 6.25rem;
+								font-size: 1.125rem;
+								background: transparent;
+								border-color: $green;
+								color: $green;
+								border: 0.063rem solid;
+								margin-right: 0.75rem;
+								margin-right: 0.65rem;
+								padding: 0;
+								text-align: center;
+								span {
+									color: $black;
+									margin-right: -0.15rem;
+								}
+							}
+						}
+					}
+					.activity-list__items {
+						.activity-list__item {
+							padding: 0.625rem;
+							&__inner {
+								padding: 1rem;
+								background: $white;
+								border-radius: 0.5rem;
+								.activity-badges {
+									text-align: right;
+									span {
+										background: #9cbdc6;
+										color: $white;
+										border-radius: 3.125rem;
+										padding: 0.313rem 0.625rem;
+										font-size: 0.75rem;
+										text-transform: uppercase;
+										font-family: 'Avenir-Black';
+									}
+								}
+								.activity_img {
+									width: 6.25rem;
+									height: 6.25rem;
+									background-size: contain;
+									border-radius: 6.25rem;
+									background-color: $background-grey;
+									margin: auto;
+									position: relative;
+									.activity_badge_img {
+										background-repeat: no-repeat;
+										height: 2.75rem;
+										text-align: center;
+										width: 2.75rem;
+										font-size: 3rem;
+										position: absolute;
+										bottom: 0;
+										right: -0.625rem;
+										background-size: contain;
+										color: $white;
+										padding-top: 0.25rem;
+									}
+								}
+								.activity_list_content {
+									.activity_list_title {
+										padding: 1rem 0;
+										font-size: 0.75rem;
+										font-weight: bold;
+										color: $green;
+										text-transform: uppercase;
+										text-align: center;
+										font-family: 'Avenir-Black', 'Avenir-Roman', 'Avenir-Heavy';
+									}
+									.activity_list_description {
+										padding: 0rem 0;
+										font-size: 1.25rem;
+										color: $black;
+										text-align: center;
+										font-family: 'Avenir-Black', 'Avenir-Roman', 'Avenir-Heavy';
+									}
+									.activity_list_Comments {
+										display: flex;
+										width: 100%;
+										margin-top: 2rem;
+										.event_list_date {
+											width: 50%;
+											padding: 0rem 0rem;
+											position: relative;
+											img {
+												width: 1.5rem;
+												position: absolute;
+												top: 0.55rem;
+												left: 0;
+												display: inline;
+											}
+											p {
+												color: #8f9092;
+												padding-left: 2rem;
+												font-size: 0.875rem;
+												margin-top: 0.75rem;
+												font-family: 'Avenir-Black', 'Avenir-Roman', 'Avenir-Heavy';
+											}
+											button {
+												font-size: 0.875rem;
+												font-weight: 400;
+												letter-spacing: 0.05rem;
+												text-transform: uppercase;
+												padding: 0.675rem 1.25rem;
+												width: auto;
+												border: 2px solid $green;
+												color: $green;
+												background-color: transparent;
+												outline: none;
+												transition: all 0.3s;
+												border-radius: 6.25rem;
+												font-family: 'Avenir-Heavy';
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			&__right {
+				@include respond-to($mobile) {
+					padding: 1rem;
+				}
+				@include respond-to($mobile-only) {
+					padding: 1rem;
+				}
+				@include respond-to($tablet) {
+					padding: 1rem;
+				}
+		
+				@include respond-to($desktop) {
+					@include span-columns(4 of 12);
+				}
+				@include respond-to($large-desktop) {
+					@include span-columns(4 of 12);
+				}
+				
+				.public-profile-event-attended-title {
+					font-size: 2.25rem;
+					font-family: 'Avenir-Black';
+				}
+				.public-profile-event-attended {
+					box-shadow: 0px 1px 10px 2px #ddd;
+					padding: 2rem 2rem;
+					border-radius: 1.25rem;
+					margin-top: 2.65rem;
+					background: $white;
+					&__item {
+						margin-top: 1.25rem;
+						margin-bottom: 1.25rem;
+						.event_list_content {
+							.event_list_title {
+								padding-bottom: 0.35rem;
+								font-size: 1.5rem;
+								font-family: 'Avenir-Black';
+								color: $black;
+							}
+							.event_list_date-location {
+								display: flex;
+								width: 100%;
+								.event_list_date {
+									width: 50%;
+									padding: 0rem 0rem;
+									position: relative;
+									img {
+										width: 1.25rem;
+										position: absolute;
+										top: 0.188rem;
+										left: 0;
+										display: inline;
+									}
+									span {
+										color: #8f9092;
+										padding-left: 1.5rem;
+										font-size: 0.875rem;
+									}
+								}
+							}
+						}
+						
+					}
+				}
+			}
+		}
+	}
+	.profile-strength {
+		@include clearfix;
+		padding: 2rem 0;
+		background-color: #232323;
+
+		.profile-strength__label {
+			@include span-columns(4 of 12);
+			//margin-right: 2rem;
+			color: #fff;
+			text-transform: uppercase;
+			letter-spacing: 0.05rem;
+
+			.highlight {
+				color: $green;
+			}
+		}
+
+		.profile-strength__progress {
+			@include span-columns(6 of 12);
+			float: left;
+
+			.progress-bar {
+				padding: 0.125rem 0;
+				width: 100%;
+
+				.progress-bar__inner {
+					background-color: transparent;
+					border: 1px solid #6f6f6f;
+				}
+
+				.progress-bar__inner, .progress-bar__track {
+					border-radius: 10rem;
+				}
+			}
+		}
+	}
+
+	.profile-section__loading {
+		padding: 4rem 2rem;
+		text-align: center;
+
+		.sk-spinner {
+			> div {
+				background-color: $green;
+			}
+		}
+	}
+
+	.profile-section__notice {
+		border-radius: 0.25rem;
+		padding: 0.75rem 1.5rem;
+		margin-bottom: 2rem;
+		margin-top: -1rem;
+
+		background-color: $background-grey;
+	}
+
+	.profile-section__notice--success {
+		color: $green;
+		background-color: $background-green;
+	}
+
+	.profile-section__notice--danger {
+		color: #484848;
+		background-color: $background-red
+	}
+
+	.profile-role-details {
+		@include clearfix;
+		background-color: #f5f5f5;
+		padding: 2rem;
+
+		.profile-role-details__section {
+			background-color: #ffffff;
+			margin-bottom: 1rem;
+			border-radius: 4px;
+			position: relative;
+		}
+
+		.profile-role-details__title {
+			color: $black;
+
+			// text-transform: capitalize;
+			font-weight: 700;
+			letter-spacing: 0.05rem;
+
+			padding: 0.75rem 0rem;
+			margin: 0rem 2rem;
+			border-bottom: 1px solid $border-grey;
+		}
+
+		.profile-role-details__content {
+			@include clearfix;
+			padding: 2rem;
+
+		}
+		.profile-role-details--about {
+			&:before {
+				// z-index: -1;
+				position: absolute;
+				content: "";
+				bottom: 17px;
+				z-index: 1;
+				left: 60px;
+				height: 10px;
+				width: 50%;
+				max-width: 300px;
+				background: #777;
+				-webkit-box-shadow: 0 15px 10px #777;
+				-moz-box-shadow: 0 15px 10px #777;
+				box-shadow: 0 15px 10px #777;
+				-webkit-transform: rotate(-1deg);
+				-moz-transform: rotate(-1deg);
+				-o-transform: rotate(-1deg);
+				-ms-transform: rotate(-1deg);
+				transform: rotate(-1deg);
+			}
+			.profile-role-details--about__content {
+				position: relative;
+				z-index: 11;
+				background: #fff;
+				.about-discroption {
+					padding-bottom: 2rem;
+					color: $text-grey;
+				}
+				.user-profile-about-row {
+					@include clearfix;
+					padding: 1rem 0rem 0rem 0rem;
+					border-top: 1px solid $border-grey;
+					.user-profile-about-column {
+						@include span-columns(4 of 12);
+						@include respond-to($mobile) {
+							
+						}
+						@include respond-to($mobile-only) {
+							@include span-columns(12 of 12);
+						}
+						
+						&__inner {
+							position: relative;
+							&__icon {
+								position: absolute;
+								width: 40px;
+								left: 0;
+								img {
+									width: 100%;
+								}
+							}
+							&__content {
+								padding-left: 4rem;
+								.title {
+
+								}
+								.caption {
+									font-weight: 600;
+									padding-top: 0.3rem;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.profile-role-details--activity {
+			.profile-role-details--activity__content {
+				
+				.user-profile-activity-row {
+					padding: 0.75rem;
+					margin-bottom: 1rem;
+					background: #fbfbfb;
+					.user-profile-activity-column {
+						&__inner {
+							display: flex;
+							// &__icon {
+							// 	width: 6rem;
+							// 	img {
+							// 		width: 100%;
+							// 	}
+							// }
+							&__content {
+								// padding-left: 1rem;
+								// width: calc(100% - 1rem);
+								.title {
+								}
+								.caption {
+									padding-top: 0.3rem;
+									color: $text-grey;
+									font-style: italic;
+									font-size: 0.75rem;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.profile-role-details--education {
+			.profile-role-details--education__content {
+				
+				.user-profile-education-row {
+					padding: 0.75rem;
+					margin-bottom: 1rem;
+					background: #fbfbfb;
+					.user-profile-education-column {
+						&__inner {
+							display: flex;
+							// &__icon {
+							// 	width: 6rem;
+							// 	img {
+							// 		width: 100%;
+							// 	}
+							// }
+							&__content {
+								// padding-left: 1rem;
+								// width: calc(100% - 1rem);
+								.title {
+								}
+								.caption {
+									padding-top: 0.3rem;
+									color: $text-grey;
+									font-size: 0.75rem;
+								}
+								.education {
+									padding-top: 0.3rem;
+									color: $text-grey;
+									font-size: 0.85rem;
+									font-weight: 600;
+									padding-bottom: 0.5rem;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.profile-role-details--creator {
+			.profile-role-details--creator__content {
+				.profile-role-details--creator__content__title {
+					// font-size: 1rem;
+				}
+				.product-category {
+					display: inline-block;
+					padding-top: 1.5rem;
+					padding-bottom: 1.5rem;
+					.product-category-list {
+						width: auto;
+						background: $green;
+						color: $white;
+						padding: 0.5rem 1rem;
+						float: left;
+						border-radius: 50px;
+						margin-right: 0.75rem;
+						margin-bottom: 0.75rem;
+					}
+				}
+			}
+		}
+
+		.profile-role-details--expert {
+			.profile-role-details--expert__content {
+				.profile-role-details--expert__content__title {
+					// font-size: 1rem;
+				}
+				.product-category {
+					display: inline-block;
+					padding-top: 1.5rem;
+					padding-bottom: 1.5rem;
+					.product-category-list {
+						width: auto;
+						background: $green;
+						color: $white;
+						padding: 0.5rem 1rem;
+						float: left;
+						border-radius: 50px;
+						margin-right: 0.75rem;
+						margin-bottom: 0.75rem;
+					}
+				}
+			}
+		}
+		.user-profile-role-details__row {
+			@include clearfix;
+			.user-profile-role-details__section {
+				position: relative;
+				@include span-columns(6 of 12);
+				@include omega(2n);
+				@include respond-to($mobile-only) {
+					@include span-columns(12 of 12);
+				}
+				@include respond-to($mobile) {
+					@include span-columns(12 of 12);
+				}
+				@include respond-to($tablet) {
+					@include span-columns(12 of 12);
+				}
+
+				&:before {
+					// z-index: -1;
+					position: absolute;
+					content: "";
+					bottom: 33px;
+					left: 60px;
+					height: 10px;
+					width: 50%;
+					max-width: 300px;
+					background: #777;
+					-webkit-box-shadow: 0 15px 10px #777;
+					-moz-box-shadow: 0 15px 10px #777;
+					box-shadow: 0 15px 10px #777;
+					-webkit-transform: rotate(-1deg);
+					-moz-transform: rotate(-1deg);
+					-o-transform: rotate(-1deg);
+					-ms-transform: rotate(-1deg);
+					transform: rotate(-1deg);
+				}
+			}
+		}
+		.profile-role-details--investor {
+			&:before {
+				// z-index: -1;
+				position: absolute;
+				content: "";
+				bottom: 17px;
+				z-index: 1;
+				left: 60px;
+				height: 10px;
+				width: 50%;
+				max-width: 300px;
+				background: #777;
+				-webkit-box-shadow: 0 15px 10px #777;
+				-moz-box-shadow: 0 15px 10px #777;
+				box-shadow: 0 15px 10px #777;
+				-webkit-transform: rotate(-1deg);
+				-moz-transform: rotate(-1deg);
+				-o-transform: rotate(-1deg);
+				-ms-transform: rotate(-1deg);
+				transform: rotate(-1deg);
+			}
+			
+			.profile-role-details--investor__content{
+				@include clearfix;
+				position: relative;
+				z-index: 11;
+				background: $white;
+				&__left {
+					@include span-columns(5 of 12);
+					@include respond-to($mobile) {
+						@include span-columns(12 of 12);
+					}
+					@include respond-to($mobile-only) {
+						@include span-columns(12 of 12);
+					}
+					
+					&__inner {
+						.title {
+							color: $text-grey;
+							padding-top: 0.75rem;
+						}
+						.caption {
+							font-size: 1.5rem;
+							padding-top: 0.75rem;
+						}
+					}
+				}
+				&__right {
+					@include span-columns(7 of 12);
+					@include respond-to($mobile) {
+						@include span-columns(12 of 12);
+					}
+					@include respond-to($mobile-only) {
+						@include span-columns(12 of 12);
+					}
+					.title {
+						padding-top: 0.75rem;
+					}
+					.caption {
+						color: $text-grey;
+						padding-top: 0.75rem;
+					}
+				}
+			}
+		}
+	}
+
+	.profile-role-details--change-password {
+		.input, .password-input {
+			//margin-bottom: 2rem !important;
+		}
+	}
+
+	.profile-role-details--verify-account {
+		.profile-role-details__content {
+			> div {
+				max-width: 25rem;
+				margin: 0 auto;
+			}
+
+			padding-bottom: 2rem;
+		}
+
+		.profile-verify-account__sms-confirmation {
+			@include respond-to($mobile) {
+				.input {
+					padding-right: 0rem !important;
+					margin-bottom: 1rem !important;
+				}
+				button {
+					position: unset !important;
+					width: 5rem;
+					height: 2.75rem;
+					margin-bottom: 2rem;
+				}
+			}
+			@include respond-to($mobile-only) {
+				.input {
+					padding-right: 0rem !important;
+					margin-bottom: 1rem !important;
+				}
+				button {
+					position: unset !important;
+					width: 5rem;
+					height: 2.75rem;
+					margin-bottom: 2rem;
+				}
+			}
+			position: relative;
+
+			.input {
+				padding-right: 6rem;
+			}
+
+			button {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				width: 5rem;
+				height: 2.75rem;
+			}
+		}
+	}
+
+}

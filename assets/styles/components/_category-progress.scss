@@ -1,0 +1,84 @@
+// Category Progress Styles
+
+.category-progress {
+	position: relative;
+	padding: 0.5rem;
+	text-align: center;
+	transform: translate3d(0, 0, 0);
+	transition: background-color 0.3s;
+	border-bottom: 5px solid transparent;
+
+	.icon {
+		font-size: 0.875rem;
+		position: relative;
+		top: 2px;
+		margin-right: 0.25rem;
+		color: $green;
+	}
+
+	img {
+		max-width: 100px;
+		margin: 0 auto;
+
+		transition: all 0.3s;
+	}
+
+	.image-icon {
+		max-width: 100px;
+		margin: 0 auto;
+
+		div {
+			position: relative;
+			padding-top: 100%;
+
+			svg {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+
+	.category-progress__title {
+		font-size: 1rem;
+		font-weight: 600;
+		letter-spacing: 0.05rem;
+		text-transform: uppercase;
+		min-height: 2.75rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.category-progress__count {
+		color: #8c8c8c;
+		font-size: 0.675rem;
+		letter-spacing: 0.03rem;
+	}
+
+	.category-progress__progress-bar {
+		display: none;
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&.active {
+		color: #fff;
+		border-color: $green;
+
+		&, .icon, .category-progress__title, .category-progress__count {
+			color: $green;
+		}
+	}
+
+	&.disabled {
+		opacity: 0.35;
+		pointer-events: none;
+	}
+}

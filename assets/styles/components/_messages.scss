@@ -1,0 +1,273 @@
+.message-content {
+
+	.message-content_row {
+		
+		@include respond-to($desktop) {
+			display: flex;
+			width: 100%;
+		}
+		@include respond-to($tablet) {
+			display: flex;
+			width: 100%;
+		}
+		border: 0.063rem solid #f5f5f5;
+		.message-content__sidebar {
+			
+			@include respond-to($desktop) {
+				width: 30%;
+				float: left;
+			}
+			@include respond-to($tablet) {
+				width: 30%;
+				float: left;
+			}
+			background-color: #fcfcfc;
+			.message-content__sidebar__inner{
+				height: auto;
+				min-height: 31.25rem;
+				max-height: 31.25rem;
+				overflow-y: scroll;
+				overflow-x: hidden;
+			
+				ul{
+					padding-left: 0rem;
+					list-style-type: none;
+					li{
+						padding: 1rem 1rem;
+						border-bottom: 0.063rem solid #f5f5f5;
+						border-right: 0.063rem solid #f5f5f5;
+						cursor: pointer;
+						.sidebar__userimg{
+							height: 3.438rem;
+							width: 3.438rem;
+							border-radius: 6.25rem;
+							background-color: $black;
+							float: left;
+						}
+						.sidebar__user_content{
+							padding-left: 4.75rem;
+							padding-right: 2rem;
+							.sidebar__user_content_name {
+								text-overflow: ellipsis;
+								white-space: nowrap;
+								overflow: hidden;
+								font-weight: 600;
+								font-size: 0.9em;
+
+							}
+							.sidebar__user_content_desc {
+								text-overflow: ellipsis;
+								white-space: nowrap;
+								overflow: hidden;
+								padding-top: 0.5rem;
+								font-size: 0.9em;
+								height: 1.6rem;
+							}
+							.sidebar__user_content_date {
+								text-overflow: ellipsis;
+								white-space: nowrap;
+								overflow: hidden;
+								color: #9d9d9d;
+								padding-top: 0.5rem;
+								font-size: 0.9em;
+							}
+						}
+						
+					}
+				}
+			}
+		}
+
+		.message-content__main-content {
+
+			@include respond-to($desktop) {
+				width: 100%;
+				float: left;
+			}
+			@include respond-to($tablet) {
+				width: 100%;
+				float: left;
+			}
+			height: 100%;
+			.message-content__main-content_inner{
+				height: auto;
+				min-height: 31.25rem;
+				max-height: 31.25rem;
+				overflow-y: scroll;
+				overflow-x: hidden;
+				ul{
+					padding-left: 0rem;
+					list-style-type: none;
+					.message_sent{
+						display: inline-block;
+						clear: both;
+						float: left;
+						margin: 0 0 1rem 0;
+						width: calc(100% - 25px);
+						font-size: 0.9em;
+						padding: 0rem 1rem;
+						.message__userimg{
+							width: 3.75rem;
+							height: 3.75rem;
+							border-radius: 6.25rem;
+							background-color: $black;
+							float: left;
+						}
+						.message__content{
+							margin-left: 5.125rem;
+							padding: 1.5rem 1.5rem;
+							border: 0.063rem solid #f5f5f5;
+							position: relative;
+							display: table;
+							border-radius: 0.25rem;
+							.message__content_name {
+								font-weight: 600;
+								font-size: 0.9em;
+								span{
+									padding-left: 1rem;
+									font-weight: 500;
+									color: #9d9d9d;
+								}
+							}
+							.message__content_msg {
+								padding-top: 1rem;
+								font-size: 0.9em;
+							}
+							&:before, &:after{
+								right: 100%;
+								top: 50%;
+								border: solid transparent;
+								content: " ";
+								height: 0;
+								width: 0;
+								position: absolute;
+								pointer-events: none;
+							}
+							&:before {
+								border-right-color: #f5f5f5;
+								border-width: 0.688rem;
+								margin-top: -1.938rem;
+							}
+							&:after {
+								border-right-color: #fff;
+								border-width: 0.625rem;
+								margin-top: -1.875rem;
+							}
+						}
+					}
+					.message_replies{
+						display: inline-block;
+						clear: both;
+						float: left;
+						margin: 0 0 1rem 0;
+						width: calc(100% - 25px);
+						font-size: 0.9em;
+						
+						.message__content{
+							// margin-left: 82px;
+							// padding: 1.5rem 1.5rem;
+							background-color: #f5f5f5;
+							border-radius: 0.25rem;
+							position: relative;
+							display: table;
+							float: right;
+							.message__userimg{
+								width: 3.75rem;
+								height: 3.75rem;
+								border-radius: 6.25rem;
+								background-color: $black;
+								float: right;
+								margin-top: 1rem;
+								margin-right: 1rem;
+							}
+							.message__content_name {
+								font-weight: 600;
+								padding: 1.5rem 6.25rem 0 1.5rem;
+								font-size: 0.9em;
+								span{
+									padding-left: 1rem;
+									font-weight: 500;
+									color: #9d9d9d;
+								}
+							}
+							.message__content_msg {
+								padding: 1rem 6.25rem 1.5rem 1.5rem;
+								font-size: 0.9em;
+								border-bottom: 0.063rem solid #e3e3e3;
+							}
+							&:before, &:after{
+								left: 100%;
+								top: 50%;
+								border: solid transparent;
+								content: " ";
+								height: 0;
+								width: 0;
+								position: absolute;
+								pointer-events: none;
+							}
+							&:before {
+								border-left-color: #f5f5f5;
+								border-width: 0.688rem;
+								margin-top: -1.938rem;
+							}
+							&:after {
+								border-left-color: #f5f5f5;
+								border-width: 0.625rem;
+								margin-top: -1.875rem;
+							}
+						}
+						.message__attached{
+							padding: 1rem;
+							span{
+								padding-right: 1rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.send-message-box{
+		@include respond-to($desktop) {
+			display: flex;
+			width: 100%;
+		}
+		@include respond-to($tablet) {
+			display: flex;
+			width: 100%;
+		}
+		padding: 1rem 0;
+		.send-message-box_textarea{
+			
+			@include respond-to($desktop) {
+				width: 90%;
+				float: left;
+			}
+			@include respond-to($tablet) {
+				width: 90%;
+				float: left;
+			}
+			textarea {
+				height: 5rem;
+				resize: none;
+			}
+			.form-input{
+				border: 0.063rem solid #f5f5f5;
+			}
+		}
+		.send-message-box_btn{
+
+			@include respond-to($desktop) {
+				width: 10%;
+				float: left;
+			}
+			@include respond-to($tablet) {
+				width: 10%;
+				float: left;
+			}
+			button{
+				margin-left: 0.625rem;
+			}
+		}
+	}
+}

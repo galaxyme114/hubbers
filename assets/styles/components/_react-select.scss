@@ -1,0 +1,22 @@
+.Select--multi .Select-value {
+	color: $green;
+	border-color: rgba($green, 0.5);
+	background-color: rgba($green, 0.2);
+}
+
+.Select-control {
+	border: 2px solid #c4c4c4;
+}
+
+.Select.is-focused:not(.is-open) > .Select-control {
+	border-color: #c4c4c4;
+	box-shadow: none;
+}
+
+.Select-option.is-selected, .Select-option.is-focused {
+	background-color: rgba($green, 0.1);
+}
+
+.Select--multi .Select-multi-value-wrapper {
+	margin-bottom: 2px;
+}
